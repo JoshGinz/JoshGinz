@@ -1,0 +1,22 @@
+name: Auto Commit Changes
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Auto Commit
+      run: |
+        git config --global user.email "kvng_josh@yahoo.com"
+        git config --global user.name "JoshGinz"
+        git add -u
+        git commit -m "Auto commit changes" || echo "No changes to commit"
+        git push
