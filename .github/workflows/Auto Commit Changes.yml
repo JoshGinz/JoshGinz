@@ -19,4 +19,4 @@ jobs:
         git config --global user.name "JoshGinz"
         git add -u
         git commit -m "Auto commit changes" || echo "No changes to commit"
-        git push
+        git push https://${{ secrets.GITHUB_TOKEN }}@github.com/JoshGinz/JoshGinz.git
