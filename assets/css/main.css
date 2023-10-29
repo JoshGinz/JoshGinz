@@ -3396,7 +3396,7 @@ input, select, textarea {
 			-ms-transform: translateY(0);
 			transform: translateY(0);
 			opacity: 1;
-			margin: 0 0 1.3em 0;
+			margin: 0 0 2.6em 0;
 		}
 
 			#banner .logo .icon {
@@ -3404,11 +3404,11 @@ input, select, textarea {
 				border: solid 4px rgba(255, 255, 255, 0.125);
 				cursor: default;
 				display: inline-block;
-				font-size: 2em;
-				height: 2.25em;
-				line-height: 2.25em;
+				font-size: 4em;
+				height: 4.5em;
+				line-height: 4.5em;
 				text-align: center;
-				width: 2.25em;
+				width: 4.5em;
 			}
 
 		#banner h2 {
