@@ -3401,14 +3401,14 @@ input, select, textarea {
 
 			#banner .logo .icon {
 				border-radius: 100%;
-				border: solid 4px rgba(255, 255, 255, 0.125);
+				border: solid 2px rgba(255, 255, 255, 0.125);
 				cursor: default;
 				display: inline-block;
 				font-size: 4em;
-				height: 4.5em;
-				line-height: 4.5em;
+				height: 2.25em;
+				line-height: 2.25em;
 				text-align: center;
-				width: 4.5em;
+				width: 2.25em;
 			}
 
 		#banner h2 {
