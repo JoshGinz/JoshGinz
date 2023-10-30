@@ -3409,8 +3409,8 @@ input, select, textarea {
 				cursor: default;
 				display: inline-block;
 				font-size: 2em;
-				height: 3.5em;
-				line-height: 4em;
+				align-items: center; /* Center children vertically */
+				justify-content: center; /* Center children horizontally */
 				text-align: center;
 				width: 3.5em;
 			}
