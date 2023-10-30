@@ -3404,7 +3404,7 @@ input, select, textarea {
 		}
 
 			#banner .logo .icon {
-				border-radius: 50%;
+				border-radius: 100%;
 				border: solid 3px rgba(255, 255, 255, 0.125);
 				cursor: default;
 				display: inline-block;
@@ -3413,6 +3413,7 @@ input, select, textarea {
 				line-height: 2.25em;
 				text-align: center;
 				width: 2.25em;
+				overflow: hidden;
 			}
 
 		#banner h2 {
