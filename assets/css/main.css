@@ -3403,20 +3403,19 @@ input, select, textarea {
 			
 		}
 
-			#banner .logo .icon {
-				border-radius: 100%;
-				border: solid 3px rgb(255, 255, 255);
-				cursor: default;
-				display: inline-block;
-				font-size: 2em;
-				height: 3.5em;
-				line-height: 4.25em;
-				translate: 1;
-				align-items: center; /* Center children vertically */
-				justify-content: center; /* Center children horizontally */
-				text-align: center;
-				width: 3.5em;
-			}
+		#banner .logo .icon {
+			border-radius: 50%; /* Makes the element a perfect circle */
+			border: solid 3px rgba(255, 255, 255, 0.125);
+			cursor: default;
+			display: flex;
+			align-items: center; /* This will vertically center the FontAwesome icon */
+			justify-content: center; /* This will horizontally center the FontAwesome icon */
+			font-size: 2em; /* Adjust as necessary */
+			height: 3.5em; /* Set a fixed height */
+			width: 3.5em; /* Set a fixed width to maintain aspect ratio */
+			overflow: hidden;
+		  }
+		  
 
 		#banner h2 {
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
