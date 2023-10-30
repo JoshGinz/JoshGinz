@@ -3407,7 +3407,7 @@ input, select, textarea {
 				border-radius: 100%;
 				border: solid 3px rgba(255, 255, 255, 0.125);
 				cursor: default;
-				display: flex;
+				display: inline-block;
 				font-size: 4em;
 				height: 2.25em;
 				line-height: 2.25em;
