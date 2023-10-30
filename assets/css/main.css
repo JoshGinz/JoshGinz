@@ -3386,7 +3386,7 @@ input, select, textarea {
 			width: 55em;
 			display: flex;
     		align-items: center; /* this will vertically center the items */
-   			justify-content: left; /* this will place maximum space between the items */
+   			justify-content: right; /* this will place maximum space between the items */
 		}
 
 		#banner .logo {
