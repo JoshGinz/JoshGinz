@@ -3411,6 +3411,7 @@ input, select, textarea {
 				font-size: 2em;
 				height: 3.5em;
 				line-height: 4.25em;
+				translate: 1;
 				align-items: center; /* Center children vertically */
 				justify-content: center; /* Center children horizontally */
 				text-align: center;
