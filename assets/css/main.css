@@ -3404,15 +3404,15 @@ input, select, textarea {
 		}
 
 			#banner .logo .icon {
-				border-radius: 120%;
+				border-radius: 100%;
 				border: solid 3px rgba(255, 255, 255, 0.125);
 				cursor: default;
 				display: inline-block;
 				font-size: 2em;
-				height: 2.25em;
+				height: 3.5em;
 				line-height: 2.25em;
 				text-align: center;
-				width: 2.25em;
+				width: 3.5em;
 			}
 
 		#banner h2 {
