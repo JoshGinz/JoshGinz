@@ -3407,7 +3407,7 @@ input, select, textarea {
 			border-radius: 50%; /* Makes the element a perfect circle */
 			border: solid 3px rgba(255, 255, 255, 0.125);
 			cursor: default;
-			display: flexbox;
+			display: flex;
 			align-items: center; /* This will vertically center the FontAwesome icon */
 			justify-content: center; /* This will horizontally center the FontAwesome icon */
 			line-height: 4.3em;
