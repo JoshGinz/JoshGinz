@@ -3405,7 +3405,7 @@ input, select, textarea {
 
 		#banner .logo .icon {
 			border-radius: 50%; /* Makes the element a perfect circle */
-			border: solid 3px rgba(255, 255, 255, 0.125);
+			border: solid 3px rgb(255, 255, 255);
 			cursor: default;
 			display: flex;
 			align-items: center; /* This will vertically center the FontAwesome icon */
@@ -3413,7 +3413,7 @@ input, select, textarea {
 			line-height: 4.3em;
 			font-size: 2em; /* Adjust as necessary */
 			height: 3.5em; /* Set a fixed height */
-			width: 4em; /* Set a fixed width to maintain aspect ratio */
+			width: 3.5em; /* Set a fixed width to maintain aspect ratio */
 			overflow: hidden;
 		  }
 		  
