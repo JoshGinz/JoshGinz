@@ -2411,62 +2411,43 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
-		border-radius: 5px;
-		border: 0;
-		display: inline-block;
-		position: relative;
-		overflow: hidden;
-	}
+.image {
+	border-radius: 5px;
+	border: 0;
+	display: inline-block;
+	position: relative; /* Ensure this is not overridden to allow overflow hidden to work */
+	overflow: hidden; /* This clips any overflowing content */
+}
 
-		.image img {
-			border-radius: 5px;
-			display: block;
-		}
+.image img {
+	border-radius: 5px;
+	display: block;
+	width: 100%; /* This makes the image fill the container */
+}
 
-		.image.left, .image.right {
-			max-width: 40%;
-			overflow: hidden;
-		}
+.image.left, .image.right {
+	max-width: 40%;
+	float: left; /* Apply float to both left and right to avoid repetition */
+	padding-right: 1.5em; /* Right padding for left floated images */
+	margin-top: 0.25em; /* Align top of image if necessary */
+}
 
-			.image.left img, .image.right img {
-				width: 100%;
-				overflow: hidden;
-			}
+.image.right {
+	float: right; /* Overrides the float from .image.left */
+	padding-right: 0; /* Reset the right padding for right floated images */
+	padding-left: 1.5em; /* Left padding for right floated images */
+}
 
-		.image.left {
-			float: left;
-			padding: 0 1.5em 1em 0;
-			top: 0.25em;
-			overflow: hidden;
-		}
+.image.fit, .image.main {
+	display: block;
+	margin: 0 0 2em 0;
+	width: 100%;
+}
 
-		.image.right {
-			float: right;
-			padding: 0 0 1em 1.5em;
-			top: 0.25em;
-			overflow: hidden;
-		}
+.image.main {
+	margin-bottom: 3em; /* Additional bottom margin for .image.main */
+}
 
-		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
-
-			.image.fit img {
-				width: 100%;
-			}
-
-		.image.main {
-			display: block;
-			margin: 0 0 3em 0;
-			width: 100%;
-		}
-
-			.image.main img {
-				width: 100%;
-			}
 
 /* List */
 
