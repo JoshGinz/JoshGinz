@@ -2416,6 +2416,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		overflow: hidden;
 	}
 
 		.image img {
