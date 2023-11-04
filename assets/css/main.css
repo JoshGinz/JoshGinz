@@ -3689,7 +3689,9 @@ input, select, textarea {
 
 		.wrapper .inner {
 			padding: 3em 0 1em 0 ;
-			margin: 20 auto;
+			margin: 0 auto;
+			margin-top: 20px; /* Adjust the value as needed */
+			margin-bottom: 20px; /* Adjust the value as needed */
 			width: 55em;
 		}
 
