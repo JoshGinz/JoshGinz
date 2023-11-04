@@ -2431,21 +2431,26 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.image.left {
+			.image.left {
 				float: left;
 				padding: 0 1.5em 1em 0;
 				top: 0.25em;
-				-webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-				clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-		 }
+				-webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+				clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+				-webkit-box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+				box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+			  }
 			  
-		.image.right {
+			  .image.right {
 				float: right;
 				padding: 0 0 1em 1.5em;
 				top: 0.25em;
-				-webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-				clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-		 }
+				-webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+				clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+				-webkit-box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+				box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+			  }
+			  
 			  
 
 		.image.fit {
