@@ -2435,12 +2435,14 @@ input, select, textarea {
 			float: left;
 			padding: 0 1.5em 1em 0;
 			top: 0.25em;
+			overflow: hidden;
 		}
 
 		.image.right {
 			float: right;
 			padding: 0 0 1em 1.5em;
 			top: 0.25em;
+			overflow: hidden;
 		}
 
 		.image.fit {
