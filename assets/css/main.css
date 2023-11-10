@@ -3492,6 +3492,7 @@ input, select, textarea {
 
 				#banner .logo {
 					margin: 0 0 1em 0;
+					text-align: left;
 				}
 
 					#banner .logo .icon {
