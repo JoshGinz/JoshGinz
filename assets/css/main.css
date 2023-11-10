@@ -3494,6 +3494,7 @@ input, select, textarea {
 
 				#banner .logo {
 					margin: 0 0 1em 0;
+					margin-right: 5%;
 					
 				}
 
@@ -3504,10 +3505,12 @@ input, select, textarea {
 
 				#banner h2 {
 					font-size: 1.5em;
+					margin-right: 5%;
 				}
 
 				#banner p {
 					font-size: 0.8em;
+					margin-right: 5%;
 				}
 
 		}
