@@ -3488,32 +3488,28 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 5em 2em 4.25em 2em ;
+				padding: 6em 3em 5em 3em; /* Increased padding for more space */
 				margin-bottom: -2.5em;
 			}
-
-				#banner .logo {
-					margin: 0 0 1em 0;
-					margin-right: 5%;
-					
-				}
-
-					#banner .logo .icon {
-						font-size: 1.5em;
-						margin-right: 5%;
-					}
-
-				#banner h2 {
-					font-size: 1.5em;
-					margin-right: 5%;
-				}
-
-				#banner p {
-					font-size: 0.8em;
-					margin-right: 5%;
-				}
-
+		
+			#banner .logo {
+				margin: 0 0 2em 0; /* Increased bottom margin for more space below the logo */
+			}
+		
+			#banner .logo .icon {
+				font-size: 1.5em;
+			}
+		
+			#banner h2 {
+				font-size: 1.5em;
+			}
+		
+			#banner p {
+				font-size: 0.8em;
+			}
+		
 		}
+		
 
 		body.is-preload #banner .logo {
 			-moz-transform: translateY(0.5em);
