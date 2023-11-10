@@ -3401,6 +3401,7 @@ input, select, textarea {
 			height: 3.5em; /* Set a fixed height */
 			width: 3.5em; /* Set a fixed width to maintain aspect ratio */
 			overflow: hidden;
+			margin-right: 10%;
 		
 		  }
 		  
