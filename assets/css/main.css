@@ -3372,7 +3372,7 @@ input, select, textarea {
 			width: 55em;
 			display: flex;
     		align-items: center; /* this will vertically center the items */
-   			justify-content: space-around; /* this will place maximum space between the items */
+   			justify-content: flex-start; /* this will place maximum space between the items */
 		}
 
 		#banner .logo {
@@ -3385,7 +3385,7 @@ input, select, textarea {
 			-ms-transform: translateY(0);
 			transform: translateY(0);
 			opacity: 1;
-			margin: 10% 0 1.3em 0;
+			margin: 0 0 1.3em 0;
 			
 		}
 
@@ -3401,7 +3401,8 @@ input, select, textarea {
 			height: 3.5em; /* Set a fixed height */
 			width: 3.5em; /* Set a fixed width to maintain aspect ratio */
 			overflow: hidden;
-			margin-right: 10%;
+			margin-right: 1em;
+
 		
 		  }
 		  
