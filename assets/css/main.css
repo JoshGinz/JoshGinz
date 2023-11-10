@@ -2894,12 +2894,6 @@ input, select, textarea {
 			color: rgba(255, 255, 255, 0.35);
 		}
 
-		.center-buttons {
-			display: flex;
-			justify-content: center;
-		}
-		
-
 		input[type="submit"].primary,
 		input[type="reset"].primary,
 		input[type="button"].primary,
@@ -3491,31 +3485,31 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+@media screen and (max-width: 736px) {
 
-			#banner {
-				padding: 6em 3em 5em 3em; /* Increased padding for more space */
-				margin-bottom: -2.5em;
-			}
-		
-			#banner .logo {
-				margin: 0 0 2em 0; /* Increased bottom margin for more space below the logo */
-			}
-		
-			#banner .logo .icon {
-				font-size: 1.5em;
-			}
-		
-			#banner h2 {
-				font-size: 1.5em;
-			}
-		
-			#banner p {
-				font-size: 0.8em;
-			}
-		
-		}
-		
+    #banner {
+        padding: 6em 3em 5em 3em; /* Increased padding for more space */
+        margin-bottom: -2.5em;
+    }
+
+    #banner .logo {
+        margin: 0 0 2em 0; /* Increased bottom margin for more space below the logo */
+    }
+
+    #banner .logo .icon {
+        font-size: 1.5em;
+    }
+
+    #banner h2 {
+        font-size: 1.5em;
+    }
+
+    #banner p {
+        font-size: 0.8em;
+    }
+
+}
+
 
 		body.is-preload #banner .logo {
 			-moz-transform: translateY(0.5em);
