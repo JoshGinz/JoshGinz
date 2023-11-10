@@ -21,7 +21,7 @@
 			));
 			@include vendor('transform', 'translateY(0)');
 			opacity: 1;
-			margin: 0 0 (_size(element-margin) * 0.5) 1em;
+			margin: 0 0 (_size(element-margin) * 0.65) 0;
 
 			.icon {
 				border-radius: 100%;
@@ -103,7 +103,7 @@
 		 	margin-bottom: (_size(wrapper-edges, small) * -1);
 
 			.logo {
-				margin: 0 0 (_size(element-margin) * 0.5) 0;
+				margin: 0 0 (_size(element-margin) * 0.5) 1em;
 
 				.icon {
 					font-size: 1.5em;
