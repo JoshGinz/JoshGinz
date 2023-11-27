@@ -2135,6 +2135,7 @@ input, select, textarea {
 					border: 3px solid #ffffff; /* Example white border */
 					padding: 5px; /* Space around the image */
 					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a subtle shadow for depth */
+					margin-bottom: 20px; /* Adds space below the image */
 				}
 
 				.close-modal {
