@@ -141,5 +141,33 @@
 						$menu._hide();
 
 			});
+		$(document).ready(function() {
+			// Get the modal
+			var modals = $('.modal');
+	
+			// Get the button that opens the modal
+			var btns = $(".open-modal");
+		
+			// Get the <span> element that closes the modal
+			var spans = $(".close-modal");
+		
+			// When the user clicks the button, open the modal 
+			btns.click(function() {
+				var modalId = $(this).data('modal');
+				$('#' + modalId).show();
+			});
+		
+			// When the user clicks on <span> (x), close the modal
+			spans.click(function() {
+				$(this).closest('.modal').hide();
+			});
+		
+			// When the user clicks anywhere outside of the modal, close it
+			$(window).click(function(event) {
+				if ($(event.target).hasClass('modal')) {
+					$(event.target).hide();
+				}
+			});
+		});
 
 })(jQuery);
