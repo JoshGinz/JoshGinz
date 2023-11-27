@@ -2127,6 +2127,21 @@ input, select, textarea {
 				}
 				
 				
+				.image-container {
+					display: block;
+					width: 451px; /* Width of the container */
+					height: 252px; /* Height of the container */
+					overflow: hidden; /* Hide overflow */
+					border-radius: 10px; /* Rounded corners */
+				}
+				
+				.image-container img {
+					width: 100%; /* Make image fill the container */
+					height: auto; /* Maintain aspect ratio */
+					object-fit: cover; /* Ensures the image covers the area without stretching */
+				}
+
+				
 				.modal-content img {
 					max-width: 100%; /* Ensure image is not stretched beyond its original size */
 					height: auto; /* Maintain aspect ratio */
