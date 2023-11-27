@@ -2134,6 +2134,7 @@ input, select, textarea {
 					overflow: hidden; /* Hide overflow */
 					border-radius: 10px; /* Rounded corners */
 					margin-left: -30px;
+					margin-top: -30px;
 				}
 				
 				.image-container img {
