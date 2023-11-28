@@ -488,6 +488,370 @@
 
 
 
+										<article>
+											<!-- Link and Image -->
+											<a href="#" class="image open-modal" data-modal="modalPID">
+												<img src="projects/pid/Screenshot 2023-11-28 at 10.52.49 AM.png" alt="PID Controller" />
+											</a>
+										
+											<!-- Title -->
+											<h3 class="major">PID Controller</h3>
+										
+											<!-- Brief Description -->
+											<p>Designing a PID controller for a remote control car, maining proper speed as it navigates a scaled city.</p>
+										
+											<!-- Learn More Link -->
+											<a href="#" class="special open-modal" data-modal="modalPID">Learn more</a>
+										</article>
+										
+										<!-- Modal Content -->
+										<div id="modalPID" class="modal">
+											<div class="modal-content">
+												<span class="close-modal">&times;</span>
+												<h2>PID Controller</h2>
+										
+												
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<strong>
+														<span style="color: #000000; font-size: 12pt;">
+															OBJECTIVE
+														</span>
+													</strong>
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														Design a PID vehicle speed trajectory controller for a scaled (1:25) robotic car, which is used at the Information and Decision Science Lab&rsquo;s Scaled Smart City (IDC). The car can be modeled using the simplified representation where m = 0.434 kg is the mass of the car, b represents the viscous friction, F is the force applied to the car, and v is the speed of the car. To achieve the correct step response the requirements are that the overshoot must be below 25%, the settling time must be below .2 seconds, and have less than a 10% steady-state error.
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<strong>
+														<span style="color: #000000; font-size: 12pt;">
+															DESIGN
+														</span>
+													</strong>
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														To determine the PID controller values, the first step is to identify the system. Given a diagram of the forces acting on the car seen in Figure 1, the equation of motion, seen in Equation 1, was derived.
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<img style="width: 288px; height: 130.649007px; display: block; margin-left: auto; margin-right: auto;" src="projects/pid/Screenshot 2023-11-18 at 11.05.58 PM.png" alt="" />;
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<img style="width: 288px; height: 130.649007px; display: block; margin-left: auto; margin-right: auto;" src="projects/pid/Screenshot 2023-11-18 at 11.06.01 PM.png" alt="" />;
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														Where&nbsp;
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															v
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														&nbsp;represents the velocity of the system,&nbsp;
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															F
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														&nbsp;is the force required to push the mass (
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															m)
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														,
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															&nbsp;
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														&nbsp;and&nbsp;
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															b&nbsp;
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														is the viscous friction acting on the mass. Once we obtained that equation of motion, we used Laplace transformations to create a transfer function of the system. The open loop transfer function derived can be seen by Equation 2.
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<img style="width: 288px; height: 130.649007px; display: block; margin-left: auto; margin-right: auto;" src="projects/pid/Screenshot 2023-11-18 at 11.06.05 PM.png" alt="" />;
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														<span style="color: #000000; font-size: 12pt;">
+															After deriving the open loop transfer function, the block diagram (Figure 2) involving the PID controller (Equation 3) was used to develop the closed loop transfer function seen by Equation 4.
+														</span>
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														<img style="width: 288px; height: 130.649007px; display: block; margin-left: auto; margin-right: auto;" src="projects/pid/Screenshot 2023-11-18 at 11.06.10 PM.png" alt="" />;
+														<br />
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														<img style="width: 288px; height: 130.649007px; display: block; margin-left: auto; margin-right: auto;" src="projects/pid/Screenshot 2023-11-18 at 11.06.16 PM.png" alt="" />;
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														Where &nbsp;
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															Y(s)
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														&nbsp;represents the output velocity of the system,&nbsp;
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															R(s)
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														&nbsp;represents the input velocity of the system,&nbsp;
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															V
+														</span>
+													</em>
+													<em>
+														<span style="color: #000000; font-size: 9pt;">
+															o
+														</span>
+													</em>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															(s)
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														&nbsp;is the open loop output velocity,
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															&nbsp;
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														and&nbsp;
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															F
+														</span>
+													</em>
+													<em>
+														<span style="color: #000000; font-size: 9pt;">
+															o
+														</span>
+													</em>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															(s)
+														</span>
+													</em>
+													<strong>
+														<span style="color: #000000; font-size: 12pt;">
+															&nbsp;
+														</span>
+													</strong>
+													<span style="color: #000000; font-size: 12pt;">
+														is the open loop force required to push the car.
+													</span>
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														From the transfer function (Equation 4), identifying the characteristic equation was next. The characteristic equation derived can be seen in Equation 5.
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<img style="width: 288px; height: 130.649007px; display: block; margin-left: auto; margin-right: auto;" src="projects/pid/Screenshot 2023-11-18 at 11.06.25 PM.png" alt="" />;
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<span style="color: #ffffff; font-size: 12pt;">
+														\To determine the PID controller va
+													</span>
+												</p>
+												<p>
+													<span style="color: #ffffff; font-size: 12pt;">
+														<span style="color: #000000; font-size: 12pt;">
+															To arrive at the gain values, the next step in the process was to compare the denominator of the ideal transfer function shown below in Equation 6.
+														</span>
+														lues, the first step is to identify the system. Given a diagram of the forces acting on the car seen in Figure 1, the equation of motion, seen in Equation 1, was derived.
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													&lt;img style="width: 288px; height: 130.649007px; display: block; margin-left: auto; margin-right: auto;" src="IMAGA" alt="" /&gt;
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														To finally achieve the gain values for the system, the viscous friction needed to be identified. The open loop transfer function (Equation 2) was analyzed in MATLAB to obtain a step response resembling that of Figure 3 shown below.
+													</span>
+												</p>
+												<p>
+													&lt;img style="width: 288px; height: 130.649007px; display: block; margin-left: auto; margin-right: auto;" src="IMAGA" alt="" /&gt;
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														Using the found value of viscous friction (b = 4.5) and comparing it with the characteristic equation, it was found that the gain values of the system are&nbsp;
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															D
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														&nbsp;= 0,&nbsp;
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															P
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														&nbsp;= 35.43, and&nbsp;
+													</span>
+													<em>
+														<span style="color: #000000; font-size: 12pt;">
+															I
+														</span>
+													</em>
+													<span style="color: #000000; font-size: 12pt;">
+														&nbsp;to be 3436.
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<strong>
+														<span style="color: #000000; font-size: 12pt;">
+															RESULTS
+														</span>
+													</strong>
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														The results gathered from the Information and Decision Science Lab&rsquo;s Sealed (1:25) Smart City conclude that the PID gain values were not accurate to achieve the desired overshoot, settling time, and steady-state error. When going to test the values the car overshot the ideal speed by 53%, did not settle for 1 second, and had a steady state error of 0.50. Testing in MatLab the overshoot was predicted to be 19%, and the settling time was 0.1 seconds, with no steady-state error. The two speeds tested were 0.4 m/s and .3 m/s and for both the response settled around 0.6 m/s.
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<span style="color: #000000; font-size: 12pt;">
+														<img style="width: 288px; height: 130.649007px; display: block; margin-left: auto; margin-right: auto;" src="projects/pid/Screenshot 2023-11-18 at 11.06.29 PM.png" alt="" />;
+														<br />
+													</span>
+												</p>
+												<p>
+													<span style="font-weight: 400;">
+														The ideal step response would have no overshoot and settle at 0.4m/s. Looking at the ideal step response graph you can see how the gain values are scaled. The ideal and real charts both have an approximately similar rising time, this could be caused by a similar ratio of the proportional term to the integral term, the only difference being the lack of a derivative term within the real trial.
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<img style="width: 288px; height: 130.649007px; display: block; margin-left: auto; margin-right: auto;" src="projects/pid/Screenshot 2023-11-18 at 11.06.35 PM.png" alt="" />;
+												</p>
+												<p>
+													<strong>
+														PATH FORWARD
+													</strong>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													<span style="font-weight: 400;">
+														Moving forward, what should be redone is the analysis of the original transfer function and a reworking of the algebra behind achieving the gain values. The conclusion of this term project proved the importance of each of the terms in the PID control. The zeroed derivative term allows for an extreme amount of overshoot since the controller has no damping force. Therefore, moving forward team 9 is going to re-evaluate the given problem and find a correct solution that incorporates the derivative term.
+													</span>
+												</p>
+												<p>
+													&nbsp;
+												</p>
+												<p>
+													&nbsp;
+												</p>
+
+												
+										
+											</div>
+										</div>
+
+
+
+
 										</article>
 											<a href="./projects.html#PID" class="image"><img src="images/pic05.jpg" alt="" /></a>
 											<h3 class="major">PID RC Speed Controller</h3>
