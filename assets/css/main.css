@@ -2179,6 +2179,23 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	.articles-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	article {
+		flex: 0 0 48%; /* each article will take up roughly half the width of the container */
+		box-sizing: border-box; /* ensures padding and border are included in the width */
+	}
+	
+	/* Optional: add some padding or margin to the articles for better spacing */
+	article {
+		margin-bottom: 20px; /* adjust as needed */
+	}
+	
+
 /* Form */
 
 	form {
