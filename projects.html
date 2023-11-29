@@ -760,6 +760,29 @@
 													</div>
 												</div>
 
+												<h2>Coding Project 2: CFD - flow viz., flow field, and forces</h2>
+										
+												<!-- Image inside Modal -->
+												<p>This project was to explore ways to visualize flow, plot flow fields, and assess forces over basic aerodynamic objects using Computational Fluid Dynamics (CFD). 
+												</p>
+												<img src="projects/Coding/Airo/a1.PNG" alt="Sparky the Firefighter" />
+												<p> A diagram detailing the boundary conditions of the aluminum plate as provided by the project prompt. The applied flux is applied evenly across the entire side surface and the detailed surface temperatures also describe their entire respective surfaces.</p>
+
+												<h2>Results</h2>
+												<p>To simulate the nodes and make sure that the code is accurate we started with a 3x3 grid with the specified boundary conditions. When we tried to simulate a 4x4 grid, the code would provide a 3x3 because the way it is written, a center node is required but the data is still accurate to a 4x4 grid. The initial 3x3 graph can be found in Appendix B. Once we could be sure that the code is accurate we increased the nodes to 50x50 for the final resolution resulting in the graph</p>
+												<img src="projects/Coding/Heat/c2.PNG" alt="Sparky the Firefighter" />
+												<p>The code starts by defining the grid parameters (length and height of the plate, and grid spacing in both directions), physical parameters (thermal conductivity, density, specific heat capacity, and thermal diffusivity of aluminum), and boundary conditions (surface temperatures and heat fluxes at top and bottom, heat transfer coefficient at right, and surrounding temperature). Next, the time step is calculated based on the grid spacing and thermal diffusivity, and the number of time steps is set. The initial temperature at each node is set to the surrounding temperature, except for the center node which is set to the average of its neighboring nodes. Then, the temperature at each node is updated over time steps using an explicit finite difference method. The temperature at each interior node is updated based on the temperatures of its neighboring nodes using the heat equation, while the center node temperature is updated separately. The boundary conditions are set for each time step, and the temperature distribution is plotted at certain time steps using a mesh grid and a surface plot. Overall, the code simulates the temperature distribution in an aluminum plate with given physical properties and boundary conditions using an explicit finite difference method, and provides a visualization of the temperature distribution over time.
+												</p>
+
+															<!-- Download Button -->
+												<div class="row">
+													<div class="col-12-large">
+														<ul class="actions special">
+															<li><a href="projects/Coding/Heat/heattransferprojectP5Group37.m" class="button primary" download="heattransferprojectP5Group37.m">Download Code Used</a></li>
+														</ul>
+													</div>
+												</div>
+
 
 												<!-- Detailed Description -->
 												<!-- Add your detailed description here -->
