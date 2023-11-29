@@ -105,7 +105,7 @@
 										<article>
 											<!-- Link and Image -->
 											<a href="#" class="image open-modal" data-modal="modalAir">
-												<img src="projects/3D/fa5a19_ffab154ee4c04be7bde464b77f9d0ff0~mv2.jpg" alt="Sparky the Firefighter" />
+												<img src="projects/ASAE/image (4).png" alt="Sparky the Firefighter" />
 											</a>
 										
 											<!-- Title -->
@@ -123,13 +123,34 @@
 											<div class="modal-content">
 												<span class="close-modal">&times;</span>
 												<h2>ASAE AIRCRAFT</h2>
-										
-												<!-- Image inside Modal -->
-												<img style="display: block; margin-left: auto; margin-right: auto;" src="projects/Sparky/Screenshot 2023-11-18 at 9.38.05 PM.png" alt="Sparky Project Screenshot" width="402" height="212" />
-										
-												<!-- Detailed Description -->
-												<!-- Add your detailed description here -->
-										
+												<h2><strong>THIS PROJECT IS BEING WORKED ON ACTIVLY MORE INFORMATION WILL BE ADDED LATER, STAY TUNED.</strong></h2>
+												<p><br></p>
+												<p>The SAE International Aero Design East Advanced Class competition, scheduled for March 8-10, presents a challenging yet stimulating opportunity for engineering teams to innovate in aerospace technology. The primary objective of this competition is to design a multifaceted system capable of simulating wildfire combat operations. This involves deploying a Ground Transport Vehicle (GTV) from a Powered Autonomous Delivery Aircraft (PADA), which in turn is released from a larger Primary Aircraft (PA). The PA also carries a water payload, integral to the mission&apos;s success.</p>
+												<p><br></p>
+
+												<img src="projects/ASAE/image (3).png" alt="Sparky the Firefighter" />
+
+												<p>The scope of the project revolves around designing, building, and operating a vehicle system that meets these complex requirements. This encompasses various engineering and design tasks:</p>
+												<p><br></p>
+												<p>Fuselage Design and Integration: The fuselage, serving as the central body of the aircraft, must house all control mechanisms, support the payload, and connect the wings and tail. It is also responsible for carrying the PADA. The design includes manufacturing landing gear and wing integration, ensuring internal accessibility for control system installation and payload removal.</p>
+												<p><br></p>
+												<p>Wing and Tail Engineering: The wings are crucial for generating sufficient lift for takeoff, considering the aircraft&apos;s weight. The tail aids in stability, countering the moments acting on the aircraft. Control surfaces like ailerons and flaps are essential for steering and altering the center of lift.</p>
+												<p><br></p>
+
+												<img src="projects/ASAE/image (5).png" alt="Sparky the Firefighter" />
+
+												<p>Primary Aircraft (PA) Requirements: The PA must carry a 4lb water payload and the PADA, capable of releasing it mid-flight.</p>
+												<p><br></p>
+												<p>Powered Autonomous Delivery Aircraft (PADA): The PADA carries parts for the GTV and must autonomously navigate to two types of targets&mdash;one marked by GPS and the other by color.</p>
+												<p><br></p>
+												<p>Ground Transport Vehicle (GTV): This manually controlled vehicle carries a water payload and is assembled post-delivery by the PADA.</p>
+												<p><br></p>
+												<p>Testing encompasses three modules: the Ground Station with a Data Acquisition System (DAS), the PA/PADA, and the GTV. The DAS includes mission planning software and altimetry tools, while the aircraft systems incorporate Pixhawk Flight Controllers, Radiolink AT10 Transmitters, and specific safety measures like SAE power limiters and arming plugs. The GTV, based on a commercial STEM RC Car Kit, must transport 2lbs of water to a designated target.</p>
+												<p><br></p>
+												<p>Construction involves assembling pre-manufactured components, primarily sourced from RC hobby sites and online marketplaces. Mounting these components requires a combination of Velcro and fasteners, particularly for high-torque elements like servo motors and engines. The design also incorporates extended wiring with shrink-wrapped extensions and precise positioning of parts.</p>
+												<p><br></p>
+												<p>In summary, this project represents a comprehensive endeavor in aerospace engineering, demanding a synthesis of design, mechanical, and electronic skills. It not only tests the team&apos;s ability to innovate within stringent constraints but also provides a real-world application scenario, mirroring the complexity and demands of modern aerospace challenges.</p>
+																						
 											</div>
 										</div>
 										<article>
@@ -481,6 +502,101 @@
 											<!-- Learn More Link -->
 											<a href="#" class="special open-modal" data-modal="modalcode">Learn more</a>
 										</article>
+										
+										<!-- Modal Content -->
+										<div id="modalcode" class="modal">
+											<div class="modal-content">
+												<span class="close-modal">&times;</span>
+												<h2>Coding Project 1: Heat Transfer Plate</h2>
+										
+												<!-- Image inside Modal -->
+												<p>The primary objective of this project is to develop a robust and accurate numerical model using explicit, two-dimensional finite difference methods to simulate and analyze the temperature distribution within a 30x30 cm square plate of aluminum (2 cm thick) under given boundary conditions. This model aims to predict the temperature variation across the plate both spatially and temporally, starting from an initial uniform temperature of 20°C.
+												</p>
+												<img src="projects/Coding/Heat/c1.PNG" alt="Sparky the Firefighter" />
+												<p> A diagram detailing the boundary conditions of the aluminum plate as provided by the project prompt. The applied flux is applied evenly across the entire side surface and the detailed surface temperatures also describe their entire respective surfaces.</p>
+
+												<h2>Results</h2>
+												<p>To simulate the nodes and make sure that the code is accurate we started with a 3x3 grid with the specified boundary conditions. When we tried to simulate a 4x4 grid, the code would provide a 3x3 because the way it is written, a center node is required but the data is still accurate to a 4x4 grid. The initial 3x3 graph can be found in Appendix B. Once we could be sure that the code is accurate we increased the nodes to 50x50 for the final resolution resulting in the graph</p>
+												<img src="projects/Coding/Heat/c2.PNG" alt="Sparky the Firefighter" />
+												<p>The code starts by defining the grid parameters (length and height of the plate, and grid spacing in both directions), physical parameters (thermal conductivity, density, specific heat capacity, and thermal diffusivity of aluminum), and boundary conditions (surface temperatures and heat fluxes at top and bottom, heat transfer coefficient at right, and surrounding temperature). Next, the time step is calculated based on the grid spacing and thermal diffusivity, and the number of time steps is set. The initial temperature at each node is set to the surrounding temperature, except for the center node which is set to the average of its neighboring nodes. Then, the temperature at each node is updated over time steps using an explicit finite difference method. The temperature at each interior node is updated based on the temperatures of its neighboring nodes using the heat equation, while the center node temperature is updated separately. The boundary conditions are set for each time step, and the temperature distribution is plotted at certain time steps using a mesh grid and a surface plot. Overall, the code simulates the temperature distribution in an aluminum plate with given physical properties and boundary conditions using an explicit finite difference method, and provides a visualization of the temperature distribution over time.
+												</p>
+
+															<!-- Download Button -->
+												<div class="row">
+													<div class="col-12-large">
+														<ul class="actions special">
+															<li><a href="projects/Coding/Heat/heattransferprojectP5Group37.m" class="button primary" download="heattransferprojectP5Group37.m">Download Code Used</a></li>
+														</ul>
+													</div>
+												</div>
+
+												<h2>Coding Project 2: CFD - flow viz., flow field, and forces</h2>
+										
+												<!-- Image inside Modal -->
+												<p>The goal is to apply Computational Fluid Dynamics (CFD) tools for visualization, analysis, and quantification of flow characteristics over a chosen aerodynamic object, enhancing practical CFD application in relevant areas. This involves the selection and detailed presentation of an aerodynamic model, including rationale and specific features like airfoil type, coupled with the calculation and interpretation of the Reynolds and Mach numbers to determine flow state and compressibility. Flow visualization using tracer tools will analyze flow behavior, focusing on attachment and rotational structures. Pressure and velocity contour plots at the object's centerline will be created and interpreted to identify key features. Finally, the project requires computing non-dimensional force and moment coefficients, determining the center of pressure, and discussing its importance in aerodynamic design, ensuring individual integrity in all analyses while permitting collaboration for model selection and simulation setup. 
+												</p>
+												<img src="projects/Coding/Airo/a1.PNG" alt="Sparky the Firefighter" />
+												<h2>Introduction</h2>
+												<p>The study of aerodynamic properties remains fundamental to advancing the field of aerospace engineering. This project delves into an in-depth analysis of a selected aerodynamic model, examining its structural features and inherent flow characteristics. Through a series of tasks, the investigation evaluates critical parameters such as Reynolds and Mach numbers, flow tracers, flow contours, and aerodynamic forces. Emphasis is placed on visual representation of the model and its behavior, accompanied by rigorous calculations to validate the observations. The outcomes of this investigation aim to provide insights into the model's performance and potential applications in real-world aerospace scenarios.</p>
+
+												<h2>Model Selection Description </h2>
+												<img src="projects/Coding/Airo/image.png" alt="Sparky the Firefighter" />
+												<p>The model central to this study is the Eppler 423 wing profile, distinguished by its unique aerodynamic characteristics. Measuring 48 inches in length and having a 14-inch chord, this wing yields an aspect ratio tailored for optimal flight dynamics. The Eppler 423 airfoil, with its superior lift-to-drag ratio, stands out as a favored selection in aerospace endeavors. The rationale behind adopting the Eppler 423 is twofold: firstly, its well-recognized standing within the aerospace sector, and secondly, the intent to delve deeper into the aerodynamic intricacies it exhibits under varied flow regimes. Utilizing a wing with a 48-inch span is strategic, ensuring that the experimental setup is both representative and primed for precise data collection and analysis. Furthermore, this wing is a key element in the ASAE senior design project, underscoring its relevance and importance in contemporary aerospace studies.</p>
+												<h2>Flow Characteristics
+												</h2>
+												<p>With a Reynolds number of 372726.44, which far exceeds the general threshold of 4000, the flow characteristic is distinctly turbulent. Furthermore, the calculated Mach speed stands at 0.0391. Given this value is substantially below the standard benchmark of 0.3 for incompressibility, the flow is confidently characterized as incompressible. This comprehensive evaluation offers crucial insights into the aerodynamic behavior of the wing profile under the stipulated conditions.
+												</p>
+
+												<h2>Flow Contours</h2>
+												<h1>Pressure Contour</h1>
+												<img src="projects/Coding/Airo/image (1).png" alt="Sparky the Firefighter" />
+												<p>The pressure contours, characterized by the series of lines and varying colors, highlight areas of different pressure magnitudes around the airfoil. The closely spaced contour lines in some regions suggest steep pressure gradients, indicating rapid changes in pressure. This is especially evident in the region where the colors transition from green to red, denoting a swift shift from moderate to high pressure. This is likely the area where the airflow separates from the airfoil surface, creating a pressure differential.
+
+													The regions of high pressure, marked by the red and orange hues, are typically found on the windward side (or the front) of the airfoil. This is where the incoming air molecules are compressed as they collide with the airfoil's leading edge. Conversely, the blue hues depict areas of lower pressure, which are generally located on the leeward side (or the back) of the airfoil. This pressure reduction on the back side is due to the air's accelerated flow, governed by Bernoulli's principle.
+													
+													The yellow surrounding region, with its relatively consistent pressure values, signifies the undisturbed flow away from the airfoil, suggesting that its influence on the airflow diminishes with distance.
+													
+													The presence of these varying pressure zones around the airfoil indicates the generation of lift. The pressure difference between the upper and lower surfaces creates an upward force, allowing the airfoil to achieve lift. The magnitude and distribution of these pressure differences can provide insights into the efficiency and stability of the airfoil in generating lift.
+												</p>
+
+												<h1>VelocityS Contour</h1>
+												<img src="projects/Coding/Airo/image (2).png" alt="Sparky the Firefighter" />
+												<p>The image displays a computational fluid dynamics (CFD) simulation of airflow around an airfoil. The velocity contours, indicated by the color gradient and streamline patterns, show the distribution of airspeeds. The tight clustering of lines towards the top rear suggests a high-velocity gradient, likely where the flow accelerates significantly.
+
+													The red region at the top of the airfoil represents the highest velocity magnitudes, as denoted by the peak value on the color scale. This is characteristic of the flow behavior just above the surface, where the boundary layer is the thinnest and the speed is greatest before it potentially separates from the surface.
+													
+													The wide-spaced green contours represent areas of lower velocity magnitude, typical of the freestream velocity away from the airfoil's influence. The smooth transition of hues from green through yellow to red indicates a gradual increase in velocity as the flow approaches and moves over the airfoil.
+													
+													Overall, the pattern of velocity around the airfoil is a key factor in the generation of aerodynamic forces such as lift. The higher velocities over the top surface compared to the bottom suggest lower pressure on the top, according to Bernoulli's principle, thus contributing to lift. The effectiveness of the airfoil design in managing these velocities can be inferred from such simulations, which is crucial for optimizing performance for aerospace applications.</p>
+
+												<h2>Coding Project 2: Airfoil Selection Database</h2>	
+												
+												<img src="projects/Coding/ASAE/image (8).png" alt="Sparky the Firefighter" />
+
+												<p>The script stands out for its capability to access and analyze a comprehensive database of over 1600 airfoils, enabling a thorough and detailed comparison to select the best airfoil for specific aerospace applications. Here&apos;s an expanded view incorporating this aspect:</p>
+												<p><br></p>
+												<p>Extensive Airfoil Database: The script connects to an online database containing over 1600 airfoil profiles, available at &apos;<a data-fr-linked="true" href="https://m-selig.ae.illinois.edu/ads/coord_database.html">https://m-selig.ae.illinois.edu/ads/coord_database.html</a>&apos;. This vast collection includes a wide variety of airfoil shapes, each potentially suited to different aerodynamic needs.</p>
+												<p><br></p>
+												<p>Automated Data Retrieval and Analysis: Utilizing the BeautifulSoup library, the script efficiently parses this extensive database to extract data links for each airfoil. It then processes each airfoil by extracting its coordinates and computing its aerodynamic performance based on the input parameters.</p>
+												<p><br></p>
+												<p>Concurrent Processing for Efficiency: The script employs concurrent.futures.ThreadPoolExecutor for handling multiple airfoils simultaneously. This approach significantly speeds up the analysis process, making it feasible to evaluate such a large dataset in a reasonable timeframe.</p>
+												<p><br></p>
+												<p>Optimal Airfoil Selection: After processing, the script compares the performance metrics of these 1600+ airfoils. It evaluates them based on criteria like lift-to-drag ratio, lift coefficient, and drag coefficient, ultimately pinpointing the most efficient airfoil under the given conditions.</p>
+												<p><br></p>
+												<p>Result Visualization and Information: Once the best airfoil is determined, the script not only visualizes its shape but also fetches and displays an image, if available. It provides additional reference information, giving users a comprehensive understanding of why this particular airfoil is optimal.</p>
+												<p><br></p>
+
+												<img src="projects/Coding/ASAE/image (6).png" alt="Sparky the Firefighter" />
+												<img src="projects/Coding/ASAE/image (7).png" alt="Sparky the Firefighter" />
+												<p>In summary, this script is a powerful tool in aerospace engineering, especially for projects like the SAE Aero Design competition. It leverages an extensive database of airfoils, applies rigorous computational methods to evaluate their performance, and identifies the most suitable airfoil for specific flight conditions and design objectives.</p>
+												
+
+
+												<h2>Last, but not least</h2>
+												<p>Another exciting project I&apos;ve embarked on is the creation of a dynamic and interactive website. This venture into web development has been a thrilling journey, blending creativity with technical skills. The process of coding and designing each element, from the user interface to the underlying functionality, has been both challenging and immensely rewarding. Seeing my ideas come to life on the digital canvas is exhilarating, and the experience has significantly broadened my technical repertoire. This website project represents not just a product of coding proficiency, but a testament to my passion for exploring new realms of technology and innovation.&nbsp;</p>
+										
+											</div>
+										</div>
 									</section>
 									<ul class="actions">
 										<li><a href="projects.html" class="button">Browse All</a></li>
