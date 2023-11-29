@@ -117,7 +117,7 @@
 											<div class="modal-content">
 												<span class="close-modal">&times;</span>
 												<h2>ASAE AIRCRAFT</h2>
-										
+												<p><strong>THIS PROJECT IS BEING WORKED ON ACTIVLY MORE INFORMATION WILL BE ADDED LATER</strong></p>
 												<p><br></p>
 												<p>The SAE International Aero Design East Advanced Class competition, scheduled for March 8-10, presents a challenging yet stimulating opportunity for engineering teams to innovate in aerospace technology. The primary objective of this competition is to design a multifaceted system capable of simulating wildfire combat operations. This involves deploying a Ground Transport Vehicle (GTV) from a Powered Autonomous Delivery Aircraft (PADA), which in turn is released from a larger Primary Aircraft (PA). The PA also carries a water payload, integral to the mission&apos;s success.</p>
 												<p><br></p>
@@ -814,7 +814,29 @@
 													
 													Overall, the pattern of velocity around the airfoil is a key factor in the generation of aerodynamic forces such as lift. The higher velocities over the top surface compared to the bottom suggest lower pressure on the top, according to Bernoulli's principle, thus contributing to lift. The effectiveness of the airfoil design in managing these velocities can be inferred from such simulations, which is crucial for optimizing performance for aerospace applications.</p>
 
-																								
+												<h2>Coding Project 2: Airfoil Selection Database</h2>	
+												
+												
+
+												<p>This script is a comprehensive and sophisticated tool designed for analyzing and selecting airfoils, which are critical components in aerospace engineering, particularly for applications like the SAE International Aero Design East Advanced Class competition. Here&apos;s an overview of the script&apos;s functionality:</p>
+												<p><br></p>
+												<p>Airfoil Class: This class serves as a blueprint for creating airfoil objects. Each airfoil has a name, coordinates of its shape, performance data, a link to an animated GIF (if available), and a reference source.</p>
+												<p><br></p>
+												<p>Performance Data Calculation: The compute_performance_data function calculates crucial aerodynamic properties like lift coefficient, drag coefficient, lift-to-drag ratio, Reynolds number, and Mach number. These calculations are based on inputs like airfoil shape, aircraft weight, dimensions, and flight conditions.</p>
+												<p><br></p>
+												<p>Airfoil Processing: The process_airfoil function fetches and processes airfoil data from a specified URL. It extracts the airfoil&apos;s shape coordinates, calculates its performance data, and retrieves additional resources like GIFs and references.</p>
+												<p><br></p>
+												<p>Airfoil Visualization: The plot_airfoil function visualizes the shape of an airfoil using matplotlib, a powerful plotting library.</p>
+												<p><br></p>
+												<p>Comprehensive Analysis: The analyze_airfoils function performs a broad analysis of multiple airfoils. It fetches airfoil data from a specified URL, then processes each airfoil concurrently using a thread pool executor for efficiency.</p>
+												<p><br></p>
+												<p>Best Airfoil Evaluation: The evaluate_best_airfoil function compares various airfoils to identify the one with the best performance, specifically focusing on the lift-to-drag ratio.</p>
+												<p><br></p>
+												<p>Graphical User Interface (GUI): The script utilizes the tkinter library to create an interactive GUI. Users can input parameters like weight, length, wingspan, speed, and angle of attack (alpha). Upon submission, the script evaluates airfoils based on these inputs and displays the best one.</p>
+												<p><br></p>
+												<p>Image and Description Display: For the selected best airfoil, the script fetches and displays an image from the internet, along with a descriptive text, enhancing the user experience and providing more insight into the airfoil&apos;s characteristics.</p>
+												<p><br></p>
+												<p>Overall, this Python script is a powerful tool that merges aerodynamic theory with practical analysis, providing valuable insights for designing efficient aircraft wings, particularly in competitive and innovative environments like the SAE Aero Design competition.</p>							
 
 
 												<!-- Detailed Description -->
