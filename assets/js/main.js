@@ -152,10 +152,12 @@
 			var spans = $(".close-modal");
 		
 			// When the user clicks the button, open the modal 
-			btns.click(function() {
+			btns.click(function(event) {
+				event.preventDefault();  // Prevent default anchor behavior
 				var modalId = $(this).data('modal');
 				$('#' + modalId).show();
 			});
+
 		
 			// When the user clicks on <span> (x), close the modal
 			spans.click(function() {
