@@ -66,51 +66,15 @@
 						<div class="wrapper">
 							<div class="inner">
 								<h2>Resume</h2>
-								<h3>Here is my 2023 Resume</h3>
+								<h3>Here is my 2024 Resume</h3>
 								<p>My resume includes a recent internship at Wawa, and I continually update this page with my latest experiences. Progress is key, and I'm always moving forward.</p>
-								<div class="pdf-container" style="width: 100%; overflow: scroll;">
-									<iframe id="pdfIframe" src="Pdfs/Joshua R. Ginsberg Resume 2024.pdf" style="width: 100%; border: none;" onload="adjustIframeSize()"></iframe>
+								<div class="pdf-container" style="overflow: auto; padding: 20px; box-sizing: border-box;">
+									<iframe src="Pdfs/Joshua R. Ginsberg Resume 2024.pdf" style="width: 100%; height: 1000px; border: none;" frameborder="0"></iframe>
 								</div>
-								<button onclick="zoomIn()">Zoom In</button>
-								<button onclick="zoomOut()">Zoom Out</button>
-							
 								<ul class="actions special">
 									<li><a href="Pdfs/Joshua R. Ginsberg Resume 2024.pdf" class="button primary" download="Joshua R. Ginsberg Resume 2024.pdf">Download Resume</a></li>
 								</ul>
-							</div>
-							
-							<script>
-							let zoomLevel = 1;
-							
-							function adjustIframeSize() {
-								const iframe = document.getElementById('pdfIframe');
-								const aspectRatio = 11 / 8.5; // Height / Width of a letter paper
-								const width = iframe.offsetWidth; // Current width of the iframe
-								const height = width * aspectRatio; // Calculate the height based on the aspect ratio
-								iframe.style.height = `${height}px`;
-							}
-							
-							function zoomIn() {
-								zoomLevel += 0.1; // Increase zoom level
-								updateZoom();
-							}
-							
-							function zoomOut() {
-								zoomLevel = Math.max(zoomLevel - 0.1, 1); // Decrease zoom level, don't go below 1
-								updateZoom();
-							}
-							
-							function updateZoom() {
-								const iframe = document.getElementById('pdfIframe');
-								iframe.style.transform = `scale(${zoomLevel})`; // Apply zoom
-								iframe.style.transformOrigin = '0 0'; // Zoom from top left corner
-								adjustIframeSize(); // Adjust iframe size based on new zoom level
-							}
-							</script>
-							
-							
-
-
+							</div>													
 								<h2>Curriculum Vitae</h2>
 								<h3>Here is my 2023 Curriculum Vitae</h3>
 								<p>My Curriculum Vitae is being updated, and I appreciate your patience. In the meantime, please refer to this website for my professional information. Thank you.</p>
