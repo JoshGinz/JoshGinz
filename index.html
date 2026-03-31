@@ -1,695 +1,498 @@
-<!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SFTQ45LDCL"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFTQ45LDCL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9YEEFNYRHX');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua R. Ginsberg | Project Engineer</title>
+  <meta name="description" content="Joshua Ginsberg — Project Engineer specializing in mechanical/manufacturing engineering, 3D printing, CAD, and automation." />
+  <meta property="og:title" content="Joshua R. Ginsberg | Project Engineer" />
+  <meta property="og:description" content="Project Engineer - Mechanical & Manufacturing | CAD, 3D Printing & Automation" />
+  <meta property="og:url" content="https://www.joshginz.com" />
+  <meta property="og:image" content="https://www.joshginz.com/images/test2.png" />
+  <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="./assets/css/portfolio.css" />
+</head>
+<body>
 
-			gtag('config', 'G-9YEEFNYRHX');
-		</script>
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">Josh<span>Ginz</span></a>
+    <div class="nav-links" id="navLinks">
+      <button class="nav-close" id="navClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
 
-		<title>Joshua R. Ginsberg</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		
-		<!-- Open Graph Meta Tags -->
-		<meta property="og:title" content="Joshua R. Ginsberg" />
-		<meta property="og:description" content="A brief overview into the projects I have been working on." />
-		<meta property="og:url" content="https://www.joshginz.com" />
-		<meta property="og:image" content="https://www.joshginz.com/images/test2.png" />
-		<!-- Replace the content of og:url and og:image with your actual URL and image path -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-tag"><span class="dot"></span>Available for Collaboration</div>
+      <h1 class="hero-name">Joshua<br><span>Ginsberg</span></h1>
+      <div class="hero-role"><span id="typewriter"></span><span class="cursor"></span></div>
+      <p class="hero-bio">Hands-on mechanical/manufacturing engineer with a robust background in 3D printing, Python, and advanced production methods. Committed to shipping solutions with clear, measurable impact.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-layer-group"></i> View Projects</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><i class="fas fa-chevron-down"></i></div>
+</section>
 
-		<link rel="stylesheet" href="./assets/css/main.css">
-		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-up">
+        <div class="stat-number" data-target="20" data-prefix="$" data-suffix="M+">$0M+</div>
+        <div class="stat-label">Orders Supported</div>
+      </div>
+      <div class="stat-item fade-up delay-1">
+        <div class="stat-number" data-target="40" data-suffix="%↓">0%↓</div>
+        <div class="stat-label">Part Non-Conformances</div>
+      </div>
+      <div class="stat-item fade-up delay-2">
+        <div class="stat-number" data-target="75" data-suffix="%↓">0%↓</div>
+        <div class="stat-label">In-Plant Rework</div>
+      </div>
+      <div class="stat-item fade-up delay-3">
+        <div class="stat-number" data-target="98" data-suffix="%">0%</div>
+        <div class="stat-label">On-Time Delivery</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<body class="is-preload">
+<section id="about" class="section section-alt">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo-wrap fade-left">
+        <img src="images/myface.png" alt="Joshua Ginsberg" class="about-photo" />
+      </div>
+      <div class="about-text fade-right">
+        <div class="section-label">About Me</div>
+        <h2>Engineer, Builder,<br>Problem Solver</h2>
+        <div class="divider mb-2"></div>
+        <p>I'm a mechanical/manufacturing engineer based in West Chester, PA — currently a Project Engineer at <strong>EDLON Fluoropolymers</strong>, where I design PTFE/PFA-lined vessels, run FEA analysis, and build digital tools that replace manual processes.</p>
+        <p>I graduated from the University of Delaware with a Bachelor of Engineering in Mechanical Engineering (Aerospace Concentration) in May 2024. My background spans CAD design, additive manufacturing, supplier quality, and Python-driven automation.</p>
+        <p>I'm building toward leading a multidisciplinary team that ships solutions with clear, measurable public benefit — impact that's undeniable, not aspirational.</p>
+        <div class="about-badges">
+          <span class="badge"><i class="fas fa-graduation-cap"></i> B.E. Mechanical Engineering, UD '24</span>
+          <span class="badge"><i class="fas fa-map-marker-alt"></i> West Chester, PA</span>
+          <span class="badge amber"><i class="fas fa-shield-alt"></i> Secret Clearance Eligible (DoD)</span>
+          <span class="badge"><i class="fas fa-flag"></i> US Citizen (ITAR)</span>
+        </div>
+        <div style="margin-top:1.5rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <a href="Pdfs/Joshua R. Ginsberg Resume 2024.pdf" target="_blank" class="btn btn-navy" style="font-size:0.85rem; padding:0.6rem 1.2rem;"><i class="fas fa-file-pdf"></i> Download Resume</a>
+          <a href="https://linkedin.com/in/joshginz" target="_blank" class="btn btn-outline" style="font-size:0.85rem; padding:0.6rem 1.2rem; border-color:var(--border); color:var(--text-mid);"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+<section id="experience" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-label">Work History</div>
+      <h2>Experience</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="timeline">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="./index.html">Joshua R. Ginsberg</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot current"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-company">EDLON Fluoropolymers · Avondale, PA</div>
+              <div class="timeline-title">Project Engineer — Mechanical &amp; Manufacturing</div>
+            </div>
+            <span class="timeline-date">Jun 2024 – Present</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Designed and released PTFE/PFA-lined vessels &amp; piping supporting <strong>$20M+</strong> in orders; first-article pressure/leak tests passed on first run.</li>
+            <li>Built parameterized FEA toolkit (SolidWorks Simulation + Python) for vacuum-support cages; cut mass <strong>45%</strong> while meeting deflection/FOS; released via ECO.</li>
+            <li>Drove supplier quality via source inspections (GD&amp;T, ASME Y14.5); incoming nonconformances down <strong>40%</strong>, in-plant rework down <strong>75%</strong>.</li>
+            <li>Digitized production tracking with SharePoint + PowerApps; eliminated manual entry and improved on-time job closures and audit traceability.</li>
+            <li>Set test acceptance criteria; executed pressure, thermal-vacuum, and vibration checks; <strong>98%</strong> on-time hardware delivery.</li>
+          </ul>
+        </div>
+      </div>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="./index.html">Home</a></li>
-								<li><a href="./about.html">About Me</a></li>
-								<li><a href="./skills.html">Skills and Endorsements</a></li>
-								<li><a href="./resume.html">Resume</a></li>
-								<li><a href="./projects.html">Projects</a></li>
-								<li><a href="./index.html#contact">Let's Talk</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+      <div class="timeline-item fade-up delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-company">University of Delaware · Newark, DE</div>
+              <div class="timeline-title">Lead Control Systems Teaching Assistant</div>
+            </div>
+            <span class="timeline-date">Aug 2023 – May 2024</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Ran weekly control-systems sessions for ~30 students, simplifying PID, Bode, and state-space concepts into lab-ready steps.</li>
+            <li>Hosted exam reviews for ~100 students covering MATLAB/Simulink workflows and common failure modes.</li>
+            <li>Built new MATLAB/Simulink lab exercises and updated rubrics/SOPs to improve consistency across sections.</li>
+          </ul>
+        </div>
+      </div>
 
-				<!-- Banner -->
-				<section id="banner">
-					<div class="inner">
-					  <div class="logo">
-						<div class="icon">
-						  <i class="fas fa-rocket fa-2x" style="color: #ffffff;"></i>
-						</div>
-					  </div>
-					  <div>
-						<h2>Joshua Ginsberg</h2>
-						<p>Mechanical Engineer Concentration Aerospace Engineering</p>
-					  </div>
-					</div>
-				  </section>
-				  
-				
-				<!-- Wrapper -->
-					<section id="wrapper">
+      <div class="timeline-item fade-up delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-company">University of Delaware · Newark, DE</div>
+              <div class="timeline-title">Fabrication Lab Specialist</div>
+            </div>
+            <span class="timeline-date">Aug 2022 – May 2024</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Managed the ME Design Studio (industrial 3D printers, laser cutters, waterjet, vacuum furnace); delivered parts for 20+ student teams.</li>
+            <li>Taught Design for Additive Manufacturing workshops to <strong>100+ students</strong>; reduced iteration cycles and print failures.</li>
+            <li>Maintained <strong>98% equipment uptime</strong>, 0 safety incidents through preventive maintenance and troubleshooting SOPs.</li>
+          </ul>
+        </div>
+      </div>
 
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/myface.png" alt="" /></a>
-									<div class="content">
-										<h2 class="major">About Me</h2>
-										<p>I'm Joshua Ginsberg, currently in my senior year of Mechanical Engineering at the University of Delaware, with a strong focus on aerospace and a substantial proficiency in additive manufacturing. My academic journey has been a rich tapestry of innovation, hands-on experience, and transforming abstract ideas into tangible outcomes. I’ve dedicated myself to a plethora of projects, meticulously crafting intricate components and bringing life-sized movie props from the realm of imagination to reality.</p>
-										<a href="./about.html" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+      <div class="timeline-item fade-up delay-3">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-company">Wawa, Inc. · Media, PA</div>
+              <div class="timeline-title">Equipment Intern</div>
+            </div>
+            <span class="timeline-date">May 2023 – Aug 2023</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Analyzed HVAC/R service tickets and vendor performance to spot failure patterns and prioritize preventive maintenance.</li>
+            <li>Built Excel workflow for tracking assets, warranties, and SLAs; standardized evidence packs for faster warranty claims.</li>
+            <li>Coordinated with facilities leads and store managers to schedule replacements and minimize peak-season downtime.</li>
+          </ul>
+        </div>
+      </div>
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Skills and Endorsements</h2>
-										<p>Discover my professional journey, where a mix of hands-on technical skills, creative problem-solving, and collaborative leadership come together. I've honed my abilities in additive manufacturing and navigated through numerous engineering software, all grounded in a robust understanding of mechanical and aerospace engineering concepts. Here, you'll get a glimpse of my skill set, complemented by genuine endorsements from professionals and educators who have been a part of my growth and development in this field.</p>
-										<a href="./skills.html" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+    </div>
+  </div>
+</section>
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Resume & Curriculum Vitae</h2>
-										<p>Navigating through my comprehensive resume, you'll find a detailed account of my academic journey, professional experiences, and the roles that have shaped my expertise in mechanical engineering and additive manufacturing. From my time as a Fabrication Lab Teaching Assistant at the University of Delaware to my insightful internship at Wawa, Inc., each position has been a stepping stone toward mastering my craft. Delve into my resume to discover how my practical skills, combined with a strong theoretical foundation, make me a versatile and innovative engineer ready to tackle the challenges in the aerospace and manufacturing industries.</p>
-										<a href="./resume.html" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-label">Portfolio</div>
+      <h2>Projects</h2>
+      <div class="divider"></div>
+      <p style="margin-top:0.75rem;">A mix of professional work, personal builds, and competition engineering.</p>
+    </div>
+    <div class="filter-bar fade-up delay-1">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="mechanical">Mechanical</button>
+      <button class="filter-btn" data-filter="software">Software &amp; Automation</button>
+      <button class="filter-btn" data-filter="aerospace">Aerospace</button>
+    </div>
+    <div class="projects-grid">
 
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Projects</h2>
-									<p>Over the years, I've embarked on a multitude of projects, challenging my innovative spirit and honing my skills in craftsmanship. This section showcases a curated selection of my most significant and rewarding endeavors.</p>
-									<section class="features">
-										<article>
-											<!-- Link and Image -->
-											<!-- Modified modal trigger link -->
-											<a href="javascript:void(0);" class="image open-modal" data-modal="modalAir">
-												<img src="projects/ASAE/image (4).png" alt="Sparky the Firefighter" />
-											</a>
+      <div class="project-card fade-up" data-category="mechanical">
+        <div class="project-header">
+          <div class="project-icon"><i class="fas fa-car"></i></div>
+          <span class="project-cat">Mechanical · Personal</span>
+        </div>
+        <div class="project-body">
+          <h3>Tesla Model 3 Duckbill Spoiler</h3>
+          <p>Parametric CAD design (Fusion 360 + Python scripting) capturing compound trunk curvature. Iterating with 3D-printed masters before carbon fiber layup from a printed/machined mold.</p>
+          <div class="project-tags">
+            <span class="tag blue">Fusion 360</span><span class="tag blue">Python</span>
+            <span class="tag">Carbon Fiber</span><span class="tag">DFM</span>
+            <span class="tag amber">In Progress</span>
+          </div>
+        </div>
+      </div>
 
-											<!-- Apply this change to all similar modal trigger links -->
+      <div class="project-card fade-up delay-1" data-category="mechanical">
+        <div class="project-header">
+          <div class="project-icon teal"><i class="fas fa-seedling"></i></div>
+          <span class="project-cat">Mechanical · Personal</span>
+        </div>
+        <div class="project-body">
+          <h3>3D-Printed Hydroponics Tower</h3>
+          <p>18-site recirculating aeroponic system. Submersible pump recirculates nutrient solution to a top spray manifold. Focus: printable watertight geometry, quick serviceability, food-safe materials.</p>
+          <div class="project-tags">
+            <span class="tag blue">SolidWorks</span><span class="tag blue">3D Printing</span>
+            <span class="tag">Fluid Dynamics</span><span class="tag amber">In Progress</span>
+          </div>
+        </div>
+      </div>
 
-										
-											<!-- Title -->
-											<h3 class="major">ASAE AIRCRAFT</h3>
-										
-											<!-- Brief Description -->
-											<p>Creating an airplane to compete in ASAE Competition, with smaller glider attachment.</p>
-										
-											<!-- Learn More Link -->
-											<a href="#" class="special open-modal" data-modal="modalAir">Learn more</a>
-										</article>
-										
-										<!-- Modal Content -->
-										<div id="modalAir" class="modal">
-											<div class="modal-content">
-												<span class="close-modal">&times;</span>
-												<h2>ASAE AIRCRAFT</h2>
-												<h2><strong>THIS PROJECT IS BEING WORKED ON ACTIVLEY MORE INFORMATION WILL BE ADDED LATER, STAY TUNED.</strong></h2>
-												<p><br></p>
-												<p>The SAE International Aero Design East Advanced Class competition, scheduled for March 8-10, presents a challenging yet stimulating opportunity for engineering teams to innovate in aerospace technology. The primary objective of this competition is to design a multifaceted system capable of simulating wildfire combat operations. This involves deploying a Ground Transport Vehicle (GTV) from a Powered Autonomous Delivery Aircraft (PADA), which in turn is released from a larger Primary Aircraft (PA). The PA also carries a water payload, integral to the mission&apos;s success.</p>
-												<p><br></p>
+      <div class="project-card fade-up delay-2" data-category="software">
+        <div class="project-header">
+          <div class="project-icon purple"><i class="fas fa-cube"></i></div>
+          <span class="project-cat">Engineering · Professional</span>
+        </div>
+        <div class="project-body">
+          <h3>Parameterized FEA Cage Toolkit</h3>
+          <p>Python-scripted SolidWorks Simulation toolkit for vacuum-support cage optimization. Automated geometry sweeps cut structure mass by 45% while satisfying deflection limits and safety factors. Released via ECO at EDLON.</p>
+          <div class="project-tags">
+            <span class="tag blue">Python</span><span class="tag blue">SolidWorks Sim</span>
+            <span class="tag">FEA</span><span class="tag">ECO</span>
+          </div>
+        </div>
+      </div>
 
-												<img src="projects/ASAE/image (3).png" alt="Sparky the Firefighter" />
+      <div class="project-card fade-up delay-3" data-category="software">
+        <div class="project-header">
+          <div class="project-icon amber"><i class="fas fa-chart-line"></i></div>
+          <span class="project-cat">Software · Professional</span>
+        </div>
+        <div class="project-body">
+          <h3>SharePoint Production Tracker</h3>
+          <p>End-to-end digitization of production tracking at EDLON using SharePoint lists and PowerApps. Standardized fields, auto-revision stamps, and daily status exports eliminated manual data entry and status-chasing.</p>
+          <div class="project-tags">
+            <span class="tag blue">SharePoint</span><span class="tag blue">PowerApps</span>
+            <span class="tag">Python</span><span class="tag">Process Automation</span>
+          </div>
+        </div>
+      </div>
 
-												<p>The scope of the project revolves around designing, building, and operating a vehicle system that meets these complex requirements. This encompasses various engineering and design tasks:</p>
-												<p><br></p>
-												<p>Fuselage Design and Integration: The fuselage, serving as the central body of the aircraft, must house all control mechanisms, support the payload, and connect the wings and tail. It is also responsible for carrying the PADA. The design includes manufacturing landing gear and wing integration, ensuring internal accessibility for control system installation and payload removal.</p>
-												<p><br></p>
-												<p>Wing and Tail Engineering: The wings are crucial for generating sufficient lift for takeoff, considering the aircraft&apos;s weight. The tail aids in stability, countering the moments acting on the aircraft. Control surfaces like ailerons and flaps are essential for steering and altering the center of lift.</p>
-												<p><br></p>
+      <div class="project-card fade-up" data-category="mechanical">
+        <div class="project-header">
+          <div class="project-icon"><i class="fas fa-dog"></i></div>
+          <span class="project-cat">Mechanical · Personal</span>
+        </div>
+        <div class="project-body">
+          <h3>Sparky the Firefighter</h3>
+          <p>Full restoration and modernization of a vintage animatronic Dalmatian. Mechanical rebuild, electronics overhaul, and 3D-printed replacement components for worn/missing parts.</p>
+          <div class="project-tags">
+            <span class="tag blue">3D Printing</span><span class="tag">Electronics</span>
+            <span class="tag">Mechanical Restoration</span>
+          </div>
+        </div>
+      </div>
 
-												<img src="projects/ASAE/image (5).png" alt="Sparky the Firefighter" />
+      <div class="project-card fade-up delay-1" data-category="aerospace">
+        <div class="project-header">
+          <div class="project-icon teal"><i class="fas fa-plane"></i></div>
+          <span class="project-cat">Aerospace · Academic</span>
+        </div>
+        <div class="project-body">
+          <h3>ASAE Competition Aircraft</h3>
+          <p>Led engineering design as Wings Lead Engineer for a competition aircraft with integrated glider attachment mechanism. Managed structural and aerodynamic design in SolidWorks with a cross-functional student team.</p>
+          <div class="project-tags">
+            <span class="tag blue">SolidWorks</span><span class="tag">Aerodynamics</span>
+            <span class="tag">Composite Materials</span><span class="tag">Team Lead</span>
+          </div>
+        </div>
+      </div>
 
-												<p>Primary Aircraft (PA) Requirements: The PA must carry a 4lb water payload and the PADA, capable of releasing it mid-flight.</p>
-												<p><br></p>
-												<p>Powered Autonomous Delivery Aircraft (PADA): The PADA carries parts for the GTV and must autonomously navigate to two types of targets&mdash;one marked by GPS and the other by color.</p>
-												<p><br></p>
-												<p>Ground Transport Vehicle (GTV): This manually controlled vehicle carries a water payload and is assembled post-delivery by the PADA.</p>
-												<p><br></p>
-												<p>Testing encompasses three modules: the Ground Station with a Data Acquisition System (DAS), the PA/PADA, and the GTV. The DAS includes mission planning software and altimetry tools, while the aircraft systems incorporate Pixhawk Flight Controllers, Radiolink AT10 Transmitters, and specific safety measures like SAE power limiters and arming plugs. The GTV, based on a commercial STEM RC Car Kit, must transport 2lbs of water to a designated target.</p>
-												<p><br></p>
-												<p>Construction involves assembling pre-manufactured components, primarily sourced from RC hobby sites and online marketplaces. Mounting these components requires a combination of Velcro and fasteners, particularly for high-torque elements like servo motors and engines. The design also incorporates extended wiring with shrink-wrapped extensions and precise positioning of parts.</p>
-												<p><br></p>
-												<p>In summary, this project represents a comprehensive endeavor in aerospace engineering, demanding a synthesis of design, mechanical, and electronic skills. It not only tests the team&apos;s ability to innovate within stringent constraints but also provides a real-world application scenario, mirroring the complexity and demands of modern aerospace challenges.</p>
-																						
-											</div>
-										</div>
-										<article>
-											<!-- Link and Image -->
-											<a href="#" class="image open-modal" data-modal="modalpill">
-												<img src="projects/PillBottle/image (9).png" />
-											</a>
-										
-											<!-- Title -->
-											<h3 class="major">Pill Bottling System</h3>
-										
-											<!-- Brief Description -->
-											<p>Creating machine that holds, fills, and caps pill bottles.</p>
-										
-											<!-- Learn More Link -->
-											<a href="#" class="special open-modal" data-modal="modalpill">Learn more</a>
-										</article>
-										
-										<!-- Modal Content -->
-										<div id="modalpill" class="modal">
-											<div class="modal-content">
-												<span class="close-modal">&times;</span>
-												<h2>Pill Bottling System</h2>
+    </div>
+  </div>
+</section>
 
-												<!-- Image inside Modal -->
-												<img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/DALL·E 2023-11-27 16.59.20 - Create a formal and informative cover image for the UD MechE Junior Design Project brochure. The image should feature a sleek, professional design wit.png" alt="Sparky Project Screenshot" width="402" height="212" />
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-label">Capabilities</div>
+      <h2>Skills</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card fade-up">
+        <div class="skill-card-header"><div class="skill-icon navy"><i class="fas fa-drafting-compass"></i></div><h3>CAD &amp; Design</h3></div>
+        <div class="skill-pills">
+          <span class="skill-pill">SolidWorks</span><span class="skill-pill">Fusion 360</span>
+          <span class="skill-pill">AutoCAD</span><span class="skill-pill">GD&amp;T (ASME Y14.5)</span>
+          <span class="skill-pill">DFM / DFA</span><span class="skill-pill">Tooling Design</span>
+          <span class="skill-pill">Tolerance Analysis</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up delay-1">
+        <div class="skill-card-header"><div class="skill-icon blue"><i class="fas fa-print"></i></div><h3>Manufacturing &amp; Fabrication</h3></div>
+        <div class="skill-pills">
+          <span class="skill-pill">FDM / SLA 3D Printing</span><span class="skill-pill">Carbon Fiber Layup</span>
+          <span class="skill-pill">Waterjet</span><span class="skill-pill">Laser Cutting</span>
+          <span class="skill-pill">CNC Router</span><span class="skill-pill">Vacuum Forming</span>
+          <span class="skill-pill">Composite Materials</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up delay-2">
+        <div class="skill-card-header"><div class="skill-icon purple"><i class="fas fa-calculator"></i></div><h3>Engineering Analysis</h3></div>
+        <div class="skill-pills">
+          <span class="skill-pill">FEA (SolidWorks Sim)</span><span class="skill-pill">MATLAB / Simulink</span>
+          <span class="skill-pill">PID Control</span><span class="skill-pill">State-Space</span>
+          <span class="skill-pill">FMEA</span><span class="skill-pill">Design of Experiments</span>
+          <span class="skill-pill">Bode Analysis</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-card-header"><div class="skill-icon amber"><i class="fas fa-code"></i></div><h3>Digital &amp; Automation</h3></div>
+        <div class="skill-pills">
+          <span class="skill-pill">Python</span><span class="skill-pill">Excel / VBA</span>
+          <span class="skill-pill">SharePoint</span><span class="skill-pill">PowerApps</span>
+          <span class="skill-pill">PLM / BOM</span><span class="skill-pill">Change Control (ECO)</span>
+          <span class="skill-pill">Agile / Jira</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up delay-1">
+        <div class="skill-card-header"><div class="skill-icon green"><i class="fas fa-check-double"></i></div><h3>Quality &amp; Testing</h3></div>
+        <div class="skill-pills">
+          <span class="skill-pill">Source Inspection</span><span class="skill-pill">AS9100 / AS9102</span>
+          <span class="skill-pill">Pressure Testing</span><span class="skill-pill">Thermal-Vacuum Testing</span>
+          <span class="skill-pill">Vibration Testing</span><span class="skill-pill">First Article Inspection</span>
+          <span class="skill-pill">RCA / 8D</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up delay-2">
+        <div class="skill-card-header"><div class="skill-icon teal"><i class="fas fa-project-diagram"></i></div><h3>Project Management</h3></div>
+        <div class="skill-pills">
+          <span class="skill-pill">V&amp;V Planning</span><span class="skill-pill">Technical Writing</span>
+          <span class="skill-pill">Supplier Coordination</span><span class="skill-pill">Process Mapping</span>
+          <span class="skill-pill">P&amp;ID Documentation</span><span class="skill-pill">Lean / Kaizen</span>
+          <span class="skill-pill">Risk Management</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-												<!-- Detailed Description -->
-												<h2>Overview</h2>
-												<p>In this detailed portfolio project, I will guide you through the development of a compact pill bottling machine designed for small-batch vitamin and supplement manufacturers. This project&nbsp;was to design, manufacture, and test a compact, automated pill bottle filling system for small batch manufacturers that includes conveyance, pill filling, and capping operations.</p>												
-												<h2>Project Introduction</h2>
-												<h3>Motivation</h3>
-												<div class="page" title="Page 4">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<p>The sponsors for this project are two regional manufacturing firms, Norwalt Design (Randolph, NJ) and Omega Design (Exton, PA). The sponsors for this project have tasked the team to develop a compact frame pill bottle filling station to extend their product lines. The target end user for this system will be small-batch vitamin and supplement manufacturers that only require the packaging of their products. One of the constraints that were provided by the sponsors was the frame. The frame needed to be 20&rdquo;X20&rdquo;X40&rdquo; and constructed out of 80-20 aluminum extrusion. This constraint was put in place with the target consumer in mind. Keeping the size on the smaller size allows the small batch vitamin and supplement companies to have more options with set up and has minimal effect on their existing infrastructure. The use of the 80-20 extrusion also has excellent benefits. It is a sturdy base for the structure and allows more extrusion or custom parts to be mounted anywhere along the extrusion. This is very helpful when going through the prototyping phase since it permits certain dimensions to not be as critical and then allows the team to optimize reliability.</p>
-															</div>
-														</div>
-													</div>
-												</div>
-												<h3><img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/Screenshot 2023-11-18 at 8.51.26 PM.png" alt="" width="402" height="212" /></h3>
-												<h3>Background</h3>
-												<div class="page" title="Page 5">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<p>When touring Norwalt and Omega concepts were learned like the Vacuum suction cups that would allow for easy grabbing of objects such as a pill bottle cap. Another interesting mechanism was the rotary gear wheel which would be effective for moving around pill bottles. After doing general benchmarking for ideas at Norwalt and Omega the team started searching the internet for specific ideas for each component of the system. The team found that conveyor belts and rotary tables were the best way to transport pill bottles from each machine to the next. Different types of motors, sensors, and hardware parts were explored to come up with the most efficient machines. The bottle dispensing machine was based on using gravity to drop each bottle down after a motor pushed it onto a conveyor belt. A very popular method for pill dispensaries was a rotating funnel that would accurately drop pills into a bottle. For capping, the team explored using a lead screw to tighten the caps onto the bottles. To improve these prototypes the team will order every part that is currently needed along with motors and sensors. The different components will then be made out of metal and tested to make sure they&rsquo;re exactly what is needed. Overall, the team has gathered a lot of information and concepts from Norwalt, Omega, and online and has compiled it to create the best prototypes possible.</p>
-																<p>&nbsp;</p>
-															</div>
-														</div>
-													</div>
-												</div>
-												<p>&nbsp;</p>
-												<h2>Conceptualization and Design</h2>
-												<h3>&nbsp;</h3>
-												<h3>Concept Development</h3>
-												<div class="page" title="Page 7">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<p>The 3 most prominent concepts that were taken into consideration were divided into three categories; Bottle dispensing, Bottle filling, and Bottle Capping.&nbsp;</p>
-															</div>
-														</div>
-													</div>
-												</div>
-												<h2>&nbsp;</h2>
-												<div class="page" title="Page 7">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<h4>Preliminary Concept: Bottle Dispensing</h4>
-																<p>Concept #1: Crank-Rocker Push Platform</p>
-																<p>This preliminary concept has a strong emphasis on conveyance. The Crank-Rocker Push Platform starts with a crank-rocker 4 bar linkage mechanism (which will satisfy the Grashof condition) connected to a motor rotating clockwise. There is a &ldquo;push platform&rdquo; connected to the rocker which can be grounded somewhere. Pill bottles will be suspended initially in a vertical transparent box, where gravity pushes them down - a bottom cover can be installed which opens upon the start of the machine to prevent downward motion initially. Pill bottles will slide down a ramp and onto a platform, where they are then bound between the ramp and the vertical wall attached to the other end of the platform. Each full rotation of the crank will cause the rocker (and thus the Push Platform) to make contact with a pill bottle on the platform, which will then push the bottle onto the conveyor belt. Two &ldquo;rods&rdquo; can be placed on each side of the conveyor belt-shaped so that they get closer together as they move down the conveyor belt - to help align the pill bottles before transitioning to the next part of the machine.</p>
-																<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/Screenshot 2023-11-18 at 8.52.18 PM.png" alt="" width="467" height="276" /></p>
-																<div class="page" title="Page 8">
-																	<div class="section">
-																		<div class="layoutArea">
-																			<div class="column">
-																				<h4>Preliminary Concepts: Bottle Filling</h4>
-																				<p>Concept #2: Rotary Pill Dispenser</p>
-																				<p>This concept is designed for bottle filling. This design consists of a hopper that contains the pills. The hopper is mounted at an angle and has holes along the edge that are large enough for one pill to fit in. There is a shoot under the hopper that lines up with the holes, when a pill is in the hole it falls down the shoot and into either a pill bottle or holding area before being bottled. In the shoot, there will either be an infrared (IR) sensor or an ultrasonic sensor that will count the pills passing so the same amount will always be packaged.</p>
-																				<p>&nbsp;</p>
-																				<p><img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/Screenshot 2023-11-18 at 8.53.53 PM.png" alt="" width="314" height="330" /></p>
-																				<div class="page" title="Page 8">
-																					<div class="section">
-																						<div class="layoutArea">
-																							<div class="column">
-																								<h4>Preliminary Concepts: Bottle Capping</h4>
-																								<div class="page" title="Page 9">
-																									<div class="section">
-																										<div class="layoutArea">
-																											<div class="column">
-																												<p>Concept #7: Linear Capper</p>
-																												<p>This preliminary concept focuses on bottle capping. This system requires the caps to be dropped and positioned onto the bottles and the system above screws the caps onto the filled pill bottles. The device that is responsible for making contact with the caps and screwing it into place is a circular piece of rubber that is connected to a motor that is connected to a platform on a lead screw. The lead screw puts a downward force onto the bottle caps when the motor with the rubber screws the caps on. After the cap is attached to the bottle, the lead screw brings up the entire capping mechanism to allow the filled/capped bottle to pass through and let the next empty bottle enter into position for the process to occur again.</p>
-																												<p><img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/Screenshot 2023-11-18 at 8.54.27 PM.png" alt="" width="303" height="380" /></p>
-																											</div>
-																										</div>
-																									</div>
-																								</div>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<p>&nbsp;</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<h2>Final Design</h2>
-												<h3>Detailed Overview</h3>
-												<div class="page" title="Page 10">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<p>The current product of the system is shown below. Starting in the back left, the pill bottles are loaded into the bottle chute and individually pushed out by a linear actuator onto the rotary table. Here the bottles go through 3 different stages along the rotary table in 90-degree increments moving at a pace of 45 degrees. First, the bottles go through a pill-filling dispenser that deposits 30 + 1 pill into each bottle using a chute/funnel mechanism with a gear. Then the bottles proceed to the cap dispenser, where another linear actuator pushes a cap onto the bottles, using a bottle guide to keep the cap placed directly on the bottle. Finally, the bottles are rotated under a capping system that uses a linear actuator to apply pressure to the caps. Along with the mechanical components is an Arduino button board, ABB for short, which manually allows for 2 directional movements of each mechanical part. Additionally, there is an e-stop on the breadboard that restarts all systems and stops them in place.</p>
-																<p>&nbsp;</p>
-																<p><img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/65A4E942-F1E7-43E1-9019-09F1E72B7523.png" alt="" width="366" height="216" /><img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/Screenshot 2023-11-18 at 8.55.37 PM.png" alt="" width="366" height="209" /></p>
-															</div>
-														</div>
-													</div>
-												</div>
-												<h4>Bottle Dispensing System</h4>
-												<p>The initial bottle dispensing and conveyance system consisted of a crank-rocker mechanism as well as a conveyor belt. A motor would rotate a crank arm which would move a pusher to translate the bottles onto a conveyor belt. The conveyor belt would then carry the bottles to the rotary table. This first prototype underwent two important changes for the final design. The first is the replacement of the original crank-rocker mechanism that would push the bottles out and dispense them. Instead, a simpler linear actuator will be used to push the bottles out of the chute. This would take up less space and be more efficient. The second change to the original design was the elimination of the conveyor belt between the bottle dispenser and the rotary table. By removing the intermediate step of the conveyor belt, the team simplified the design and improved its reliability. The conveyor belt was able to be removed because it essentially served no purpose since the bottles could be dispensed directly into the rotary table. This not only removed the uncertainty of bottles falling on the belt but also made the system more compact and space efficient. Additional beam break sensors were added to the rotary table to allow the bottles to spin to the exact location needed.</p>
-												<p><img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/24D1CB2D-8CF7-406C-BCF5-6BBA35C83918.png" alt="" width="331" height="341" /></p>
-												<h4>Pill Dispensing System</h4>
-												<div class="page" title="Page 12">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<p>The pill dispensing system has stayed relatively similar to the initial concept but does have some critical improvements. The first of which is the wall height of the spinning part of the dispenser. The initial prototype had a wall high of 1&frasl;2 inch, when doing a general function test the team noticed a limit on the number of pills that can be placed before they overflow. Increasing the wall height improved the situation but didn&rsquo;t solve it completely as the team noticed on the second prototype, that the number of pills needed for all the bottles exceeded the limit of pills that could be preloaded without affecting the function. On the third prototype, a funnel was added just above the dispenser. This lets all the needed pills plus extras be loaded into it but only lets more pills be added up to a certain point that still allows for proper function. On the fourth prototype, a NEMA 17 motor was added on the same angled plane as the dispenser. A gear was then designed to slide over the side of the dispenser to interface with a gear on the motor. The gear ratio is 2:1, which means the motor can rotate exactly 4 times to dispense the required 30 pills per bottle. To ensure exactly 30 pills are dispensed, a break beam sensor was added in the shoot so that the pills fall through before landing in the bottle. The system's code keeps track of every time a pill breaks the sensor beam. Once 30 pills are reached, the pill dispenser stops spinning and allows the rotary table to move the bottle to the next station once the other subsystems have finished their processes.</p>
-																<p>&nbsp;</p>
-																<p><img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/1E90ACE4-E6AA-40F6-9013-9B12DD3C1DF8.png" alt="" width="346" height="380" /></p>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="page" title="Page 13">&nbsp;</div>
-												<h4>Bottle Capping System</h4>
-												<div class="page" title="Page 13">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<p>The cap dispensing and capping system has been consistent throughout the initial prototyping stages up until its current state, consisting of a lead screw that will be motorized pushing caps onto the filled bottles. The design has come a long way with some needed improvements after testing physical prototypes though. Starting with a need for guide rails around the bottle, shown below in Figure 5. With the bottles sitting in the rotary table there was play with the orientation of the bottle caps and the capper would sometimes jam or have errors. To correct this, 3D-printed guides were fastened along the rotary table to restrict the movement of the caps. Additionally, the rotary table grooves were expanded to allow some movement of the bottles. Originally, the rubber plunger had a chance to unscrew the bottle caps as it was being raised due to normal force and restricted movement of the bottles, to fix this, the slots in the rotary table were widened and a second linear actuator was used to push the cap against the cap guide to counteract the frictional force from the lead screw&rsquo;s gripper while it was moving up to it&rsquo;s ready position.</p>
-																<p>&nbsp;</p>
-																<p><img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/232A48B0-D4BA-48C3-A1B6-FCC7037CC72F.png" alt="" width="355" height="386" /></p>
-															</div>
-														</div>
-													</div>
-												</div>
-												<h2>Testing and Failure Analysis</h2>
-												<h3>Testing Approach</h3>
-												<div class="page" title="Page 19">
-													<div class="section">
-														<div class="layoutArea">
-															<p class="column">&nbsp;</p>
-															<h4>Bottle Dispensing</h4>
-															<p>A large emphasis was placed on how smooth each bottle transitioned from the bottle dispenser to the rotary table upon contact with the linear actuator. 10 trial runs (120 total empty bottles) were conducted with members of the team paying close attention to the transition state and its success or failure. Success was declared if an individual bottle was able to slide into an open slot on the rotary table without any issues, or without any human interference. Success was also declared if each bottle fell without interfering with the bottle below it from the 3D printed linear actuator bottle block.</p>
-															<p>&nbsp;</p>
-															<h4>Pill Dispensing</h4>
-															<p>10 trial runs (120 total empty bottles) were tested with success being declared so long as a bottle was filled with a total of 30 pills - no more, and no less. Members of the team paid close attention to the transition from the pill funnel and through the pill base, along with drop through the base, into the empty bottle for each pill. Close attention was also focused on the sensor&rsquo;s ability to stop the system at proper times, when expected (i.e., when an empty bottle entered the right position directly underneath the pill base where break-beam sensors were placed.</p>
-															<p>&nbsp;</p>
-															<h4>Cap Dispensing</h4>
-															10 trial runs (120 total caps) were tested with success being declared so long as a cap was properly placed on top of a capless bottle to prepare for the cap tightening station that followed. Members of the team paid close attention to each cap stacked upon one another, and whether they interfered with one another as the linear actuator cap block pushed each cap out of the cap chute. Attention was also focused to how the bottle cap guides interacted with each cap, and whether the positioning of the cap chute with respect to the rotary table was acceptable.
-															<p>&nbsp;</p>
-															<h4 class="column">&nbsp;</h4>
-															<h4 class="column">Cap Tightening</h4>
-															<p class="column">10 trial runs (120 total caps) were tested with success being declared so long as a cap was fully tightened upon contact with the lead screw mechanism and the linear actuator rotational stopper. Members of the team paid close attention to whether the cap orientation from cap dispensing led to any tightening issues, and whether the linear actuator was able to successfully hold the cap as the lead screw reversed its direction in preparation for the next bottle.</p>
-															<p class="column">&nbsp;</p>
-														</div>
-													</div>
-												</div>
-												<div class="page" title="Page 20">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<h3>Failure Analysis</h3>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="page" title="Page 20">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<p>Upon examination and extensive testing, two modes of failure showed worry. One rather likely place of failure is the pill dispensing mechanism. The Pill Funnel, a potential location of the failure, is susceptible to grinding over time, which can lead to a fracture in the rotation cylinder. This grinding can occur due to friction between the pills and the funnel's surfaces during the dispensing process. To address this issue, a possible solution is to introduce a lubrication system that reduces friction and wear on the surfaces. Additionally, optimizing the geometry of the funnel and selecting appropriate materials with enhanced durability can help mitigate the grinding and prolong the lifespan of the rotation cylinder. Furthermore, the pill dispensing mechanism can benefit from additional improvements. It would be beneficial to incorporate a feedback system that detects and rectifies any errors during the dispensing process. This can involve incorporating a feedback loop that cross-verifies the dispensing count with the number of pills that made it into the bottle, allowing for adjustments and ensuring accurate pill delivery.</p>
-																<p><img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/Screenshot 2023-11-18 at 8.56.32 PM.png" alt="page20image25750912" width="236.999990" height="194.999989" />&nbsp;</p>
-																<div class="page" title="Page 20">
-																	<div class="section">
-																		<div class="layoutArea">
-																			<div class="column">
-																				<p>In the case of the Bottle Cap Tightener, a common failure mode observed is cracking on the tightening mechanism due to torsion. This occurs when the twisting force applied to the caps exceeds the material's capacity to withstand it, leading to structural failures. To mitigate this problem, a redesign of the tightening mechanism may be necessary to distribute the torsional forces more effectively. Alternatively, considering alternative materials with higher torsional strength can enhance the overall robustness of the mechanism. Additionally, implementing a torque-limiting mechanism or incorporating sensors to monitor the torque applied during the tightening process can prevent excessive stress and potential cracking. Currently, to address this failure, a plastic weld was used to put the part back together, and has been holding throughout this fix. Due to the time constraints of the project, another iteration may be 3D printed with a denser infill to strengthen the device but a complete material swap would be ideal for permanent use.</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="page" title="Page 21">
-																	<div class="section">
-																		<div class="layoutArea">
-																			<div class="column">
-																				<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/Screenshot 2023-11-18 at 9.02.54 PM.png" alt="page21image29057360" width="244.499975" height="232.499986" /></p>
-																				<div class="page" title="Page 21">
-																					<div class="section">
-																						<div class="layoutArea">
-																							<div class="column">
-																								<p>By addressing these failure points and implementing the proposed solutions, the pill dispensing system can achieve higher reliability and accuracy in pill counting and bottle capping processes. Careful consideration of material selection, geometry optimization, lubrication systems, and feedback mechanisms will contribute to the development of a more efficient and dependable final design.</p>
-																								<h3>Testing Results</h3>
-																								<h4>Bottle Dispensing:</h4>
-																								<p>- 99% success rate, 10 trial runs (120 bottles tested)</p>
-																								<p>Bottle Dispensing Details:</p>
-																								<p>A 1% failure rate implies that roughly 1 bottle (really 1.2 bottles with 1% calculation) failed in the systems analysis. Members of the team decided that this error was due to how the bottles were loaded vertically in the bottle dispenser, as this had a very high success rate. Therefore, overall, this was deemed a successful subsystem.</p>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="page" title="Page 22">
-																					<div class="section">
-																						<div class="layoutArea">
-																							<div class="column">
-																								<h4>Pill Dispensing</h4>
-																								<ul>
-																									<li>
-																										<p>- &nbsp;97% Chance of getting 30 pills per bottle, 10 trial runs</p>
-																									</li>
-																									<li>
-																										<p>- &nbsp;3% Chance on +1 pill in a bottle</p>
-																										<p>Pill Dispensing Details:</p>
-																										<p>A 3% chance implies that roughly 108 extra pills total were added to all 10 trial runs in its entirety (out of a total of 3600 total pills from all trial runs). There were no issues with missing pills, and it is much more preferred to have a +1 error rather than a -1 error. It was concluded from members of the team that this +1 error is mainly due to how the pill base is oriented and how the pills are inserted into the funnel as the system begins, as there are times where one pill was able to sneak in if the pill counter was oriented in just the right position to allow for this to occur. Overall, a 3% error was more successful than not as a result of analysis</p>
-																									</li>
-																								</ul>
-																								<h4>Cap Dispensing</h4>
-																								<p>- Orientation of cap insertion created difficulties, 80% success rate, 10 trial runs, possible jamming of caps in vertical stacking orientation from lip</p>
-																								<p>- To avoid this in the future, each bottle cap guide should have sharper shoulder fillets and should be trimmed down to prevent contact.</p>
-																								<h4>Cap Tightening</h4>
-																								<p>- 80% success rate, this is a result of Cap Dispensing. If the cap is not placed on properly then the capper has a difficult time spinning the cap. This is a direct result of the cap dispensing analysis and error from the cap dispensing analysis.</p>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<p>&nbsp;</p>
-												<h2>Conclusion and Future Work</h2>
-												<h3>Reflection</h3>
-												<div class="page" title="Page 24">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<p>The scope of this project is to design, manufacture, and test a compact, automated pill bottle-filling system for small batch manufacturers that includes conveyance, pill filling, and capping operations. After testing and evaluating the final design (Figure 2), everything in the scope is completely fulfilled. The conveyance is satisfied by the rotary table that drives the whole assembly line. The pill-filling category is made up of two stages which include the pill bottle hopper and the rotary pill dispenser. The capping operation is composed of the cap pusher and the linear capper. All of these mechanisms are controlled by an Arduino mega with safety features built in, like an emergency stop button. Every main component of the design fits easily into the 20&rdquo;x20&rdquo;x 40&rdquo; 80-20 frame. The $500 limit on outside parts was a constraint that was fulfilled by only spending $428.00. Every prototype in the pill-filling category has a 100% reliability factor; however, the cap dispensing mechanism is having a bit of trouble in this field with a cap getting jammed in 1 out of 50 attempts . The linear capper also has a 100% reliability factor depending on the cap dispensing mechanism dispensing the caps properly. Overall, the design satisfies every part of the original scope along with all of the metrics and constraints.</p>
-																<p>&nbsp;</p>
-																<p><img style="display: block; margin-left: auto; margin-right: auto;" src="projects/PillBottle/Screenshot 2023-11-18 at 8.59.24 PM.png" alt="" width="613" height="334" /></p>
-															</div>
-														</div>
-													</div>
-												</div>
-												<h3>Next Steps</h3>
-												<div class="page" title="Page 25">
-													<div class="section">
-														<div class="layoutArea">
-															<div class="column">
-																<p>If the prototyping iterations continued into the summer and Fall of 2023, discussion and evaluation of the design validation would be addressed to optimize the time it takes the system to complete 12 filled bottles, along with any possibilities of jamming or error. The biggest priority would be addressing the camming of caps and making sure cap alignment was 100% as to allow the system to complete all 12 bottles, even without error. This would consist of possible redesigns of the bottle cap guide along the rotary table and the placement of the bottle cap chute and the way the linear actuator pushes caps onto the bottle. The second biggest priority would be redesigning the code to work simultaneously with each subsection when a bottle is detected at each station. This could be designed starting with mounting whisker or break-beam sensors at each station to detect the bottles allowing the system to update with each sensor and tell the code to activate multiple subsystems at once.</p>
-																<p>If the current design could be different from the first stages of concept generation and selection to the beginning of prototyping there are a few things the team would do differently. One of the largest setbacks that occurred through prototyping was the capping mechanism. The sub-system itself was fairly efficient for capping and with the final design could successfully cap the majority of bottles. The main issue lied in the time it took between steps to capp each bottle. If a different design was discussed and utilized the timing of the system could have been greatly improved, even allowing for the possibility of simultaneous code allowing the rotary table to be constantly moving.</p>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div> <!-- This is the closing tag for the modal -->
-										</div>	
-										<article>
-											<!-- Link and Image -->
-											<a href="#" class="image open-modal" data-modal="modal3D">
-												<img src="projects/3D/benchy.jpg" alt="3D Props" />
-											</a>
-										
-											<!-- Title -->
-											<h3 class="major">3D Printed Props</h3>
-										
-											<!-- Brief Description -->
-											<p>An assortment of intricate movie props, such as rings, staffs, swords, and a guitar.</p>
-										
-											<!-- Learn More Link -->
-											<a href="#" class="special open-modal" data-modal="modal3D">Learn more</a>
-										</article>
-										
-										<!-- Modal Content -->
-										<div id="modal3D" class="modal">
-											<div class="modal-content">
-												<span class="close-modal">&times;</span>
-												<h2>3D Printed Props</h2>
-										
-												<!-- Image inside Modal -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-left">
+        <div class="section-label">Get In Touch</div>
+        <h2>Let's Work<br>Together</h2>
+        <div class="divider mb-2"></div>
+        <p>Whether you have a project in mind, a role that fits, or just want to connect — I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="mailto:Joshginz237@gmail.com" class="contact-link-item">
+            <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-link-text"><strong>Email</strong><span>Joshginz237@gmail.com</span></div>
+          </a>
+          <a href="tel:3025384611" class="contact-link-item">
+            <div class="contact-link-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-link-text"><strong>Phone</strong><span>302-538-4611</span></div>
+          </a>
+          <a href="https://linkedin.com/in/joshginz" target="_blank" class="contact-link-item">
+            <div class="contact-link-icon" style="background:var(--blue);"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-link-text"><strong>LinkedIn</strong><span>linkedin.com/in/joshginz</span></div>
+          </a>
+          <div class="contact-link-item" style="cursor:default;">
+            <div class="contact-link-icon" style="background:var(--text-soft);"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-link-text"><strong>Location</strong><span>West Chester, PA · Open to Hybrid/On-Site</span></div>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem;">
+          <span class="clearance-badge"><i class="fas fa-shield-alt"></i> Secret Clearance Eligible (DoD) · US Citizen (ITAR)</span>
+        </div>
+      </div>
+      <div class="contact-form fade-right">
+        <form action="https://formspree.io/f/xbjvwvgy" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstName" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastName" placeholder="Smith" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project inquiry, collaboration, etc." />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-navy" style="width:100%; justify-content:center;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-logo">Josh<span>Ginz</span></div>
+    <div class="footer-links">
+      <a href="#about">About</a><a href="#experience">Experience</a>
+      <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://linkedin.com/in/joshginz" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:Joshginz237@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="Pdfs/Joshua R. Ginsberg Resume 2024.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+    </div>
+    <div class="footer-copy">© 2026 Joshua R. Ginsberg · West Chester, PA</div>
+  </div>
+</footer>
 
-
-
-												<h2 style="color: #ffffff; font-size: 12pt; font-weight: bold;">Life Sized Greatsword</h2>
-
-												<img src="projects/3D/sword.jpg" style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;" alt="sword" />
-												<p style="color: #ffffff; font-size: 12pt;">
-													I finished a 3D printed Greatsword from "Elden Ring." Using my Ender 3 Pro, it took a week to print all 28 parts, fitting within the printer's 220x220x250mm capacity. Post-print, I spent another week on assembly, reinforcing the structure with three galvanized steel rods. I designed the model in Blender, choosing a 0.2mm layer height and a 0.6mm nozzle for the right balance of strength and material efficiency. At six feet, it's to scale, hefty, and despite its size, it's assembled to handle like it belongs in the game—minus any fantasy features.
-												</p>
-												<img src="projects/3D/Mesword.jpg" style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;" alt="mewithdasword" />
-											
-												<h2 style="color: #ffffff; font-size: 12pt; font-weight: bold;">StormBreaker</h2>
-
-												<img src="projects/3D/storm.jpg" style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;" alt="sword" />
-												<p style="color: #ffffff; font-size: 12pt;">
-													Utilizing my Ender 3 Pro, I meticulously 3D printed a full-scale replica of Stormbreaker from the Avengers series. The entire piece was printed in multiple sections over the course of a week, designed specifically to fit within the printer's maximum capacity of 220x220x250mm. After printing, I dedicated an additional week to assemble the parts, inserting a steel rod through the center for stability and a realistic weight. The model was crafted in a CAD program with precise attention to the intricate details of the weapon, choosing a 0.2mm layer height for a fine finish, and a 0.6mm nozzle to ensure structural integrity. To complete the look, I applied a metallic spray paint to the axe head and a dark wood finish to the handle, achieving a movie-accurate appearance that feels like it's straight out of the hands of Thor himself.
-
-												</p>
-												<h2 style="color: #ffffff; font-size: 12pt; font-weight: bold;">Lord Of the Rings</h2>
-
-												<img src="projects/3D/unnamed-2.jpg" style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;" alt="sword" />
-												<p style="color: #ffffff; font-size: 12pt;">
-													In the latest foray into 3D printing, I've turned my attention to the iconic rings from the Lord of the Rings series, fabricating two replicas with my reliable Ender 3 Pro. The process involved careful calibration to accurately capture the subtle engravings and contours of each ring. Over a couple of days, these rings were printed with a 0.2mm layer height for fine detail, using a 0.4mm nozzle to ensure the engravings were clear and precise. Post-printing, the rings were finished with a smoothing technique to eliminate any layer lines, then one was colored in a vibrant green and the other in a muted ivory using specialty filaments to mimic the distinct tones of the legendary artifacts. These pieces are not only testaments to my 3D printing skills but also a nod to the craftsmanship of fantasy jewelry making.
-												</p>
-												
-												<h2 style="color: #ffffff; font-size: 12pt; font-weight: bold;">Guitar</h2>
-
-												<img src="projects/3D/12321.jpg" style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;" alt="sword" />
-												<img src="projects/3D/unnamed-5.jpg" style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;" alt="sword" />
-												<p style="color: #ffffff; font-size: 12pt;">
-													Branching into the realm of musical instruments, I've recently completed a 3D printed electric guitar body, pushing the boundaries of traditional design. This guitar body was printed with an Ender 3 Pro over an extensive period, carefully divided into multiple sections to optimize the printer's capacity. The design boasts a unique, voronoi-patterned framework, chosen not only for its aesthetic appeal but also for its potential acoustic properties. After printing, I assembled the sections, reinforcing the structure internally to ensure it could withstand the tension of guitar strings. The vibrant green finish was achieved through a meticulous painting process, providing a bold statement piece that blurs the lines between music and technology. This guitar body represents a fusion of engineering and artistry, encapsulating the innovative spirit of modern 3D printing.												</p>
-										
-											</div>
-										</div>
-										<article>
-											<!-- Link and Image -->
-											<a href="#" class="image open-modal" data-modal="modalcode">
-												<img src="projects/Coding/Heat/c0.png" alt="Sparky the Firefighter" />
-											</a>
-										
-											<!-- Title -->
-											<h3 class="major">Coding Projects</h3>
-										
-											<!-- Brief Description -->
-											<p>Various programs coded by me, involing excel, phyton, html, css, and matlab.</p>
-										
-											<!-- Learn More Link -->
-											<a href="#" class="special open-modal" data-modal="modalcode">Learn more</a>
-										</article>
-										
-										<!-- Modal Content -->
-										<div id="modalcode" class="modal">
-											<div class="modal-content">
-												<span class="close-modal">&times;</span>
-												<h2>Coding Project 1: Heat Transfer Plate</h2>
-										
-												<!-- Image inside Modal -->
-												<p>The primary objective of this project is to develop a robust and accurate numerical model using explicit, two-dimensional finite difference methods to simulate and analyze the temperature distribution within a 30x30 cm square plate of aluminum (2 cm thick) under given boundary conditions. This model aims to predict the temperature variation across the plate both spatially and temporally, starting from an initial uniform temperature of 20°C.
-												</p>
-												<img src="projects/Coding/Heat/c1.PNG" alt="Sparky the Firefighter" />
-												<p> A diagram detailing the boundary conditions of the aluminum plate as provided by the project prompt. The applied flux is applied evenly across the entire side surface and the detailed surface temperatures also describe their entire respective surfaces.</p>
-
-												<h2>Results</h2>
-												<p>To simulate the nodes and make sure that the code is accurate we started with a 3x3 grid with the specified boundary conditions. When we tried to simulate a 4x4 grid, the code would provide a 3x3 because the way it is written, a center node is required but the data is still accurate to a 4x4 grid. The initial 3x3 graph can be found in Appendix B. Once we could be sure that the code is accurate we increased the nodes to 50x50 for the final resolution resulting in the graph</p>
-												<img src="projects/Coding/Heat/c2.PNG" alt="Sparky the Firefighter" />
-												<p>The code starts by defining the grid parameters (length and height of the plate, and grid spacing in both directions), physical parameters (thermal conductivity, density, specific heat capacity, and thermal diffusivity of aluminum), and boundary conditions (surface temperatures and heat fluxes at top and bottom, heat transfer coefficient at right, and surrounding temperature). Next, the time step is calculated based on the grid spacing and thermal diffusivity, and the number of time steps is set. The initial temperature at each node is set to the surrounding temperature, except for the center node which is set to the average of its neighboring nodes. Then, the temperature at each node is updated over time steps using an explicit finite difference method. The temperature at each interior node is updated based on the temperatures of its neighboring nodes using the heat equation, while the center node temperature is updated separately. The boundary conditions are set for each time step, and the temperature distribution is plotted at certain time steps using a mesh grid and a surface plot. Overall, the code simulates the temperature distribution in an aluminum plate with given physical properties and boundary conditions using an explicit finite difference method, and provides a visualization of the temperature distribution over time.
-												</p>
-
-															<!-- Download Button -->
-												<div class="row">
-													<div class="col-12-large">
-														<ul class="actions special">
-															<li><a href="projects/Coding/Heat/heattransferprojectP5Group37.m" class="button primary" download="heattransferprojectP5Group37.m">Download Code Used</a></li>
-														</ul>
-													</div>
-												</div>
-
-												<h2>Coding Project 2: CFD - flow viz., flow field, and forces</h2>
-										
-												<!-- Image inside Modal -->
-												<p>The goal is to apply Computational Fluid Dynamics (CFD) tools for visualization, analysis, and quantification of flow characteristics over a chosen aerodynamic object, enhancing practical CFD application in relevant areas. This involves the selection and detailed presentation of an aerodynamic model, including rationale and specific features like airfoil type, coupled with the calculation and interpretation of the Reynolds and Mach numbers to determine flow state and compressibility. Flow visualization using tracer tools will analyze flow behavior, focusing on attachment and rotational structures. Pressure and velocity contour plots at the object's centerline will be created and interpreted to identify key features. Finally, the project requires computing non-dimensional force and moment coefficients, determining the center of pressure, and discussing its importance in aerodynamic design, ensuring individual integrity in all analyses while permitting collaboration for model selection and simulation setup. 
-												</p>
-												<img src="projects/Coding/Airo/a1.PNG" alt="Sparky the Firefighter" />
-												<h2>Introduction</h2>
-												<p>The study of aerodynamic properties remains fundamental to advancing the field of aerospace engineering. This project delves into an in-depth analysis of a selected aerodynamic model, examining its structural features and inherent flow characteristics. Through a series of tasks, the investigation evaluates critical parameters such as Reynolds and Mach numbers, flow tracers, flow contours, and aerodynamic forces. Emphasis is placed on visual representation of the model and its behavior, accompanied by rigorous calculations to validate the observations. The outcomes of this investigation aim to provide insights into the model's performance and potential applications in real-world aerospace scenarios.</p>
-
-												<h2>Model Selection Description </h2>
-												<img src="projects/Coding/Airo/image.png" alt="Sparky the Firefighter" />
-												<p>The model central to this study is the Eppler 423 wing profile, distinguished by its unique aerodynamic characteristics. Measuring 48 inches in length and having a 14-inch chord, this wing yields an aspect ratio tailored for optimal flight dynamics. The Eppler 423 airfoil, with its superior lift-to-drag ratio, stands out as a favored selection in aerospace endeavors. The rationale behind adopting the Eppler 423 is twofold: firstly, its well-recognized standing within the aerospace sector, and secondly, the intent to delve deeper into the aerodynamic intricacies it exhibits under varied flow regimes. Utilizing a wing with a 48-inch span is strategic, ensuring that the experimental setup is both representative and primed for precise data collection and analysis. Furthermore, this wing is a key element in the ASAE senior design project, underscoring its relevance and importance in contemporary aerospace studies.</p>
-												<h2>Flow Characteristics
-												</h2>
-												<p>With a Reynolds number of 372726.44, which far exceeds the general threshold of 4000, the flow characteristic is distinctly turbulent. Furthermore, the calculated Mach speed stands at 0.0391. Given this value is substantially below the standard benchmark of 0.3 for incompressibility, the flow is confidently characterized as incompressible. This comprehensive evaluation offers crucial insights into the aerodynamic behavior of the wing profile under the stipulated conditions.
-												</p>
-
-												<h2>Flow Contours</h2>
-												<h1>Pressure Contour</h1>
-												<img src="projects/Coding/Airo/image (1).png" alt="Sparky the Firefighter" />
-												<p>The pressure contours, characterized by the series of lines and varying colors, highlight areas of different pressure magnitudes around the airfoil. The closely spaced contour lines in some regions suggest steep pressure gradients, indicating rapid changes in pressure. This is especially evident in the region where the colors transition from green to red, denoting a swift shift from moderate to high pressure. This is likely the area where the airflow separates from the airfoil surface, creating a pressure differential.
-
-													The regions of high pressure, marked by the red and orange hues, are typically found on the windward side (or the front) of the airfoil. This is where the incoming air molecules are compressed as they collide with the airfoil's leading edge. Conversely, the blue hues depict areas of lower pressure, which are generally located on the leeward side (or the back) of the airfoil. This pressure reduction on the back side is due to the air's accelerated flow, governed by Bernoulli's principle.
-													
-													The yellow surrounding region, with its relatively consistent pressure values, signifies the undisturbed flow away from the airfoil, suggesting that its influence on the airflow diminishes with distance.
-													
-													The presence of these varying pressure zones around the airfoil indicates the generation of lift. The pressure difference between the upper and lower surfaces creates an upward force, allowing the airfoil to achieve lift. The magnitude and distribution of these pressure differences can provide insights into the efficiency and stability of the airfoil in generating lift.
-												</p>
-
-												<h1>VelocityS Contour</h1>
-												<img src="projects/Coding/Airo/image (2).png" alt="Sparky the Firefighter" />
-												<p>The image displays a computational fluid dynamics (CFD) simulation of airflow around an airfoil. The velocity contours, indicated by the color gradient and streamline patterns, show the distribution of airspeeds. The tight clustering of lines towards the top rear suggests a high-velocity gradient, likely where the flow accelerates significantly.
-
-													The red region at the top of the airfoil represents the highest velocity magnitudes, as denoted by the peak value on the color scale. This is characteristic of the flow behavior just above the surface, where the boundary layer is the thinnest and the speed is greatest before it potentially separates from the surface.
-													
-													The wide-spaced green contours represent areas of lower velocity magnitude, typical of the freestream velocity away from the airfoil's influence. The smooth transition of hues from green through yellow to red indicates a gradual increase in velocity as the flow approaches and moves over the airfoil.
-													
-													Overall, the pattern of velocity around the airfoil is a key factor in the generation of aerodynamic forces such as lift. The higher velocities over the top surface compared to the bottom suggest lower pressure on the top, according to Bernoulli's principle, thus contributing to lift. The effectiveness of the airfoil design in managing these velocities can be inferred from such simulations, which is crucial for optimizing performance for aerospace applications.</p>
-
-												<h2>Coding Project 2: Airfoil Selection Database</h2>	
-												
-												<img src="projects/Coding/ASAE/image (8).png" alt="Sparky the Firefighter" />
-
-												<p>The script stands out for its capability to access and analyze a comprehensive database of over 1600 airfoils, enabling a thorough and detailed comparison to select the best airfoil for specific aerospace applications. Here&apos;s an expanded view incorporating this aspect:</p>
-												<p><br></p>
-												<p>Extensive Airfoil Database: The script connects to an online database containing over 1600 airfoil profiles, available at &apos;<a data-fr-linked="true" href="https://m-selig.ae.illinois.edu/ads/coord_database.html">https://m-selig.ae.illinois.edu/ads/coord_database.html</a>&apos;. This vast collection includes a wide variety of airfoil shapes, each potentially suited to different aerodynamic needs.</p>
-												<p><br></p>
-												<p>Automated Data Retrieval and Analysis: Utilizing the BeautifulSoup library, the script efficiently parses this extensive database to extract data links for each airfoil. It then processes each airfoil by extracting its coordinates and computing its aerodynamic performance based on the input parameters.</p>
-												<p><br></p>
-												<p>Concurrent Processing for Efficiency: The script employs concurrent.futures.ThreadPoolExecutor for handling multiple airfoils simultaneously. This approach significantly speeds up the analysis process, making it feasible to evaluate such a large dataset in a reasonable timeframe.</p>
-												<p><br></p>
-												<p>Optimal Airfoil Selection: After processing, the script compares the performance metrics of these 1600+ airfoils. It evaluates them based on criteria like lift-to-drag ratio, lift coefficient, and drag coefficient, ultimately pinpointing the most efficient airfoil under the given conditions.</p>
-												<p><br></p>
-												<p>Result Visualization and Information: Once the best airfoil is determined, the script not only visualizes its shape but also fetches and displays an image, if available. It provides additional reference information, giving users a comprehensive understanding of why this particular airfoil is optimal.</p>
-												<p><br></p>
-
-												<img src="projects/Coding/ASAE/image (6).png" alt="Sparky the Firefighter" />
-												<img src="projects/Coding/ASAE/image (7).png" alt="Sparky the Firefighter" />
-												<p>In summary, this script is a powerful tool in aerospace engineering, especially for projects like the SAE Aero Design competition. It leverages an extensive database of airfoils, applies rigorous computational methods to evaluate their performance, and identifies the most suitable airfoil for specific flight conditions and design objectives.</p>
-												<!-- Download Button -->
-												<div class="row">
-													<div class="col-12-large">
-														<ul class="actions special">
-															<li><a href="projects/Coding/ASAE/Official_Airfoil_Selection.py" class="button primary" download="Official_Airfoil_Selection.py">Download Code Used</a></li>
-														</ul>
-													</div>
-												</div>
-
-
-
-												<h2>Last, but not least</h2>
-												<p>Another exciting project I&apos;ve embarked on is the creation of a dynamic and interactive website. This venture into web development has been a thrilling journey, blending creativity with technical skills. The process of coding and designing each element, from the user interface to the underlying functionality, has been both challenging and immensely rewarding. Seeing my ideas come to life on the digital canvas is exhilarating, and the experience has significantly broadened my technical repertoire. This website project represents not just a product of coding proficiency, but a testament to my passion for exploring new realms of technology and innovation.&nbsp;</p>
-										
-											</div>
-										</div>
-									</section>
-									<ul class="actions">
-										<li><a href="projects.html" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</section>
-<div id="contact">
-
-<div>
-
-
-				
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>
-								Feel free to reach out and connect with me; I’m always open to discuss potential opportunities, collaborations, or simply to share insights and experiences. My contact information is readily available here, and I welcome any inquiries or messages.</p>
-								<form method="post" action="https://formspree.io/f/xbjvwvgy">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									University of Delaware<br />
-									130 Academy St<br />
-									Newark, DE 19716
-								</li>
-								<li class="icon solid fa-phone">(302) 538-4611</li>
-								<li class="icon solid fa-envelope"><a href="./index.html#contact">JoshGinz@udel.edu</a></li>
-								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/joshginz">LinkedIn Profile</a></li>
-								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/its.josh237/">Instagram Profile</a></li>
-							
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 40); highlightNav(); });
+const navToggle = document.getElementById('navToggle');
+const navClose = document.getElementById('navClose');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => navLinks.classList.add('open'));
+navClose.addEventListener('click', () => navLinks.classList.remove('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+function highlightNav() {
+  const sections = ['about','experience','projects','skills','contact'];
+  let current = '';
+  sections.forEach(id => { const el = document.getElementById(id); if (el && window.scrollY >= el.offsetTop - 120) current = id; });
+  document.querySelectorAll('.nav-links a').forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
+}
+const roles = ['Project Engineer · Mechanical & Mfg','SolidWorks & FEA Specialist','3D Printing & Additive Mfg','Python Automation Builder','Supplier Quality Engineer'];
+let ri = 0, ci = 0, deleting = false;
+const tw = document.getElementById('typewriter');
+function typeLoop() {
+  const word = roles[ri];
+  if (!deleting) { tw.textContent = word.slice(0, ++ci); if (ci === word.length) { deleting = true; setTimeout(typeLoop, 2200); return; } }
+  else { tw.textContent = word.slice(0, --ci); if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; } }
+  setTimeout(typeLoop, deleting ? 38 : 72);
+}
+typeLoop();
+const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.12 });
+document.querySelectorAll('.fade-up, .fade-left, .fade-right').forEach(el => observer.observe(el));
+function animateCounters() {
+  document.querySelectorAll('.stat-number[data-target]').forEach(el => {
+    const target = +el.dataset.target, prefix = el.dataset.prefix || '', suffix = el.dataset.suffix || '';
+    let start = 0; const step = target / 50;
+    const timer = setInterval(() => { start = Math.min(start + step, target); el.textContent = prefix + Math.round(start) + suffix; if (start >= target) clearInterval(timer); }, 28);
+  });
+}
+const statsEl = document.getElementById('stats');
+const statsObserver = new IntersectionObserver((entries) => { if (entries[0].isIntersecting) { animateCounters(); statsObserver.disconnect(); } }, { threshold: 0.4 });
+if (statsEl) statsObserver.observe(statsEl);
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.project-card').forEach(card => { card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter); });
+  });
+});
+</script>
+</body>
 </html>
