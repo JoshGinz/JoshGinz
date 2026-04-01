@@ -53,54 +53,9 @@
           <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Get in Touch</a>
         </div>
       </div>
-      <!-- Engineering diagram visual -->
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-geo">
-          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Outer reference ring -->
-            <circle cx="200" cy="200" r="172" stroke="rgba(92,158,82,0.14)" stroke-width="1"/>
-            <!-- Dashed orbit ring -->
-            <circle cx="200" cy="200" r="136" stroke="rgba(92,158,82,0.22)" stroke-width="1" stroke-dasharray="7 11"/>
-            <!-- Inner solid ring -->
-            <circle cx="200" cy="200" r="96" stroke="rgba(92,158,82,0.20)" stroke-width="1.5"/>
-            <!-- Tiny center ring -->
-            <circle cx="200" cy="200" r="10" stroke="rgba(92,158,82,0.50)" stroke-width="1.5" fill="none"/>
-            <!-- Center dot -->
-            <circle cx="200" cy="200" r="3.5" fill="rgba(92,158,82,0.75)"/>
-            <!-- Crosshair lines -->
-            <line x1="0" y1="200" x2="380" y2="200" stroke="rgba(92,158,82,0.07)" stroke-width="1"/>
-            <line x1="200" y1="0" x2="200" y2="380" stroke="rgba(92,158,82,0.07)" stroke-width="1"/>
-            <!-- Cardinal tick marks (outer) -->
-            <line x1="28" y1="200" x2="28" y2="188" stroke="rgba(92,158,82,0.30)" stroke-width="1.5"/>
-            <line x1="372" y1="200" x2="372" y2="188" stroke="rgba(92,158,82,0.30)" stroke-width="1.5"/>
-            <line x1="200" y1="28" x2="212" y2="28" stroke="rgba(92,158,82,0.30)" stroke-width="1.5"/>
-            <line x1="200" y1="372" x2="212" y2="372" stroke="rgba(92,158,82,0.30)" stroke-width="1.5"/>
-            <!-- 45° tick marks -->
-            <line x1="79" y1="79" x2="88" y2="88" stroke="rgba(92,158,82,0.16)" stroke-width="1"/>
-            <line x1="321" y1="79" x2="312" y2="88" stroke="rgba(92,158,82,0.16)" stroke-width="1"/>
-            <line x1="79" y1="321" x2="88" y2="312" stroke="rgba(92,158,82,0.16)" stroke-width="1"/>
-            <line x1="321" y1="321" x2="312" y2="312" stroke="rgba(92,158,82,0.16)" stroke-width="1"/>
-            <!-- Corner reference squares (inner) -->
-            <rect x="150" y="150" width="9" height="9" stroke="rgba(92,158,82,0.28)" stroke-width="1" fill="none"/>
-            <rect x="241" y="150" width="9" height="9" stroke="rgba(92,158,82,0.28)" stroke-width="1" fill="none"/>
-            <rect x="150" y="241" width="9" height="9" stroke="rgba(92,158,82,0.28)" stroke-width="1" fill="none"/>
-            <rect x="241" y="241" width="9" height="9" stroke="rgba(92,158,82,0.28)" stroke-width="1" fill="none"/>
-            <!-- Dimension annotation line -->
-            <line x1="64" y1="248" x2="336" y2="248" stroke="rgba(92,158,82,0.10)" stroke-width="1" stroke-dasharray="3 7"/>
-            <!-- Dimension arrowheads -->
-            <polyline points="72,244 64,248 72,252" stroke="rgba(92,158,82,0.22)" stroke-width="1" fill="none"/>
-            <polyline points="328,244 336,248 328,252" stroke="rgba(92,158,82,0.22)" stroke-width="1" fill="none"/>
-            <!-- Annotation labels -->
-            <text x="200" y="170" font-family="JetBrains Mono,monospace" font-size="9.5" fill="rgba(92,158,82,0.38)" text-anchor="middle" letter-spacing="1">∅ 192 mm</text>
-            <text x="200" y="290" font-family="JetBrains Mono,monospace" font-size="9.5" fill="rgba(92,158,82,0.38)" text-anchor="middle" letter-spacing="1">R 96</text>
-            <!-- Tolerance note -->
-            <text x="200" y="358" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(92,158,82,0.28)" text-anchor="middle" letter-spacing="0.5">TOL ±0.005</text>
-            <!-- Angular dimension arc -->
-            <path d="M 200 104 A 96 96 0 0 1 296 200" stroke="rgba(245,158,11,0.22)" stroke-width="1" stroke-dasharray="5 8" fill="none"/>
-            <!-- Amber accent dot at 45° on inner ring -->
-            <circle cx="268" cy="132" r="4" fill="rgba(245,158,11,0.55)"/>
-          </svg>
-        </div>
+      <!-- Hero headshot -->
+      <div class="hero-photo-wrap">
+        <img src="images/myface.png" alt="Joshua Ginsberg" class="hero-photo" />
       </div>
     </div>
   </div>
@@ -111,20 +66,20 @@
   <div class="container">
     <div class="stats-grid">
       <div class="stat-item fade-up">
-        <div class="stat-number" data-target="20" data-prefix="$" data-suffix="M+">$0M+</div>
-        <div class="stat-label">Orders Supported</div>
+        <div class="stat-number" data-target="5" data-suffix="+ yrs">0+ yrs</div>
+        <div class="stat-label">3D Printing &amp; Additive Mfg</div>
       </div>
       <div class="stat-item fade-up delay-1">
-        <div class="stat-number" data-target="40" data-suffix="%↓">0%↓</div>
-        <div class="stat-label">Part Non-Conformances</div>
+        <div class="stat-number" data-target="100" data-suffix="+">0+</div>
+        <div class="stat-label">Students Mentored in DFA</div>
       </div>
       <div class="stat-item fade-up delay-2">
-        <div class="stat-number" data-target="75" data-suffix="%↓">0%↓</div>
-        <div class="stat-label">In-Plant Rework</div>
+        <div class="stat-number" data-target="20" data-prefix="$" data-suffix="M+">$0M+</div>
+        <div class="stat-label">Engineering Orders Delivered</div>
       </div>
       <div class="stat-item fade-up delay-3">
-        <div class="stat-number" data-target="98" data-suffix="%">0%</div>
-        <div class="stat-label">On-Time Delivery</div>
+        <div class="stat-number" data-target="0" data-prefix="" data-suffix="">0</div>
+        <div class="stat-label">Safety Incidents as Lab Lead</div>
       </div>
     </div>
   </div>
@@ -147,11 +102,14 @@
         <div class="about-badges">
           <span class="badge"><i class="fas fa-graduation-cap"></i> B.E. Mechanical Engineering, UD '24</span>
           <span class="badge"><i class="fas fa-map-marker-alt"></i> West Chester, PA</span>
-          <span class="badge"><i class="fas fa-industry"></i> PTFE / PFA Lined Equipment</span>
+          <span class="badge"><i class="fas fa-drafting-compass"></i> SolidWorks &amp; FEA</span>
+          <span class="badge"><i class="fas fa-print"></i> 3D Printing &amp; Additive Mfg</span>
+          <span class="badge"><i class="fas fa-code"></i> Python Automation</span>
+          <span class="badge"><i class="fas fa-plane"></i> Aerospace Concentration</span>
           <span class="badge amber"><i class="fas fa-bolt"></i> Open to New Opportunities</span>
         </div>
         <div style="margin-top:1.5rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
-          <a href="Pdfs/Joshua R. Ginsberg Resume 2024.pdf" target="_blank" class="btn btn-navy" style="font-size:0.85rem; padding:0.6rem 1.2rem;"><i class="fas fa-file-pdf"></i> Download Resume</a>
+          <a href="Pdfs/Joshua R. Ginsberg Resume 2026.pdf" target="_blank" class="btn btn-navy" style="font-size:0.85rem; padding:0.6rem 1.2rem;"><i class="fas fa-file-pdf"></i> Download Resume</a>
           <a href="https://linkedin.com/in/joshginz" target="_blank" class="btn btn-outline" style="font-size:0.85rem; padding:0.6rem 1.2rem; border-color:var(--border); color:var(--text-mid);"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
       </div>
@@ -173,17 +131,17 @@
         <div class="timeline-card">
           <div class="timeline-header">
             <div>
-              <div class="timeline-company">EDLON Fluoropolymers · Avondale, PA</div>
+              <div class="timeline-company">EDLON GMM Pfaudler · Avondale, PA</div>
               <div class="timeline-title">Project Engineer — Mechanical &amp; Manufacturing</div>
             </div>
             <span class="timeline-date">Jun 2024 – Present</span>
           </div>
           <ul class="timeline-bullets">
             <li>Designed and released PTFE/PFA-lined vessels &amp; piping supporting <strong>$20M+</strong> in orders; first-article pressure/leak tests passed on first run.</li>
-            <li>Built parameterized FEA toolkit (SolidWorks Simulation + Python) for vacuum-support cages; cut mass <strong>45%</strong> while meeting deflection/FOS; released via ECO.</li>
-            <li>Drove supplier quality via source inspections (GD&amp;T, ASME Y14.5); incoming nonconformances down <strong>40%</strong>, in-plant rework down <strong>75%</strong>.</li>
-            <li>Digitized production tracking with SharePoint + PowerApps; eliminated manual entry and improved on-time job closures and audit traceability.</li>
-            <li>Set test acceptance criteria; executed pressure, thermal-vacuum, and vibration checks; <strong>98%</strong> on-time hardware delivery.</li>
+            <li>Built parameterized FEA toolkit (SolidWorks Simulation + Python) for vacuum-support cages &amp; billet layouts; cut mass <strong>45%</strong> while meeting deflection/FOS; released via ECO.</li>
+            <li>Drove supplier quality via source inspections (GD&amp;T, radii/edge breaks, surface finish, weld quality); incoming nonconformances down <strong>40%</strong>, in-plant rework down <strong>75%</strong>.</li>
+            <li>Digitized production tracking with SharePoint + PowerApps (standardized fields/roles, auto-revision stamps, daily exports); reduced manual entry &amp; status-chasing, improved audit traceability.</li>
+            <li>Set test acceptance criteria; executed pressure, thermal-vacuum, and vibration checks; produced clear results reports; <strong>98%</strong> on-time hardware delivery.</li>
           </ul>
         </div>
       </div>
@@ -199,9 +157,9 @@
             <span class="timeline-date">Aug 2023 – May 2024</span>
           </div>
           <ul class="timeline-bullets">
-            <li>Ran weekly control-systems sessions for ~30 students, simplifying PID, Bode, and state-space concepts into lab-ready steps.</li>
-            <li>Hosted exam reviews for ~100 students covering MATLAB/Simulink workflows and common failure modes.</li>
-            <li>Built new MATLAB/Simulink lab exercises and updated rubrics/SOPs to improve consistency across sections.</li>
+            <li>Guided ~30 students/week through control-systems lab implementation; reinforced PID, Bode, and state-space theory with hands-on MATLAB/Simulink results.</li>
+            <li>Hosted exam reviews for ~100 students covering common failure modes and Simulink workflows; improved section pass rates.</li>
+            <li>Developed and refined lab exercises, starter models, and course materials with faculty; reduced recurring student errors and improved lab completion efficiency.</li>
           </ul>
         </div>
       </div>
@@ -217,9 +175,10 @@
             <span class="timeline-date">Aug 2022 – May 2024</span>
           </div>
           <ul class="timeline-bullets">
-            <li>Managed the ME Design Studio (industrial 3D printers, laser cutters, waterjet, vacuum furnace); delivered parts for 20+ student teams.</li>
-            <li>Taught Design for Additive Manufacturing workshops to <strong>100+ students</strong>; reduced iteration cycles and print failures.</li>
-            <li>Maintained <strong>98% equipment uptime</strong>, 0 safety incidents through preventive maintenance and troubleshooting SOPs.</li>
+            <li>Ran the ME Design Studio (industrial FDM/SLA printers, vacuum furnace, waterjet, laser cutter); delivered steady flow of parts for <strong>20+ student teams</strong> and research groups.</li>
+            <li>Taught hands-on Design-for-Additive Manufacturing workshops to <strong>100+ students</strong>; helped teams reach usable parts faster with fewer iterations and print failures.</li>
+            <li>Standardized printer material profiles and preventive maintenance schedules; maintained <strong>98% equipment uptime</strong>, <strong>0 safety incidents</strong>.</li>
+            <li>Repaired and returned key machines to service; wrote troubleshooting SOPs and machine recovery checklists that cut downtime and streamlined technician hand-offs.</li>
           </ul>
         </div>
       </div>
@@ -262,7 +221,7 @@
     </div>
     <div class="projects-grid">
 
-      <div class="project-card fade-up" data-category="mechanical">
+      <div class="project-card fade-up" data-category="mechanical" data-modal="modalSpoiler">
         <div class="project-header">
           <div class="project-icon"><i class="fas fa-car"></i></div>
           <span class="project-cat">Mechanical · Personal</span>
@@ -276,9 +235,10 @@
             <span class="tag amber">In Progress</span>
           </div>
         </div>
+        <span class="proj-card-cta">View Details →</span>
       </div>
 
-      <div class="project-card fade-up delay-1" data-category="mechanical">
+      <div class="project-card fade-up delay-1" data-category="mechanical" data-modal="modalHydro">
         <div class="project-header">
           <div class="project-icon teal"><i class="fas fa-seedling"></i></div>
           <span class="project-cat">Mechanical · Personal</span>
@@ -291,9 +251,10 @@
             <span class="tag">Fluid Dynamics</span><span class="tag amber">In Progress</span>
           </div>
         </div>
+        <span class="proj-card-cta">View Details →</span>
       </div>
 
-      <div class="project-card fade-up delay-2" data-category="software">
+      <div class="project-card fade-up delay-2" data-category="software" data-modal="modalFEA">
         <div class="project-header">
           <div class="project-icon purple"><i class="fas fa-cube"></i></div>
           <span class="project-cat">Engineering · Professional</span>
@@ -306,9 +267,10 @@
             <span class="tag">FEA</span><span class="tag">ECO</span>
           </div>
         </div>
+        <span class="proj-card-cta">View Details →</span>
       </div>
 
-      <div class="project-card fade-up delay-3" data-category="software">
+      <div class="project-card fade-up delay-3" data-category="software" data-modal="modalSP">
         <div class="project-header">
           <div class="project-icon amber"><i class="fas fa-chart-line"></i></div>
           <span class="project-cat">Software · Professional</span>
@@ -321,9 +283,10 @@
             <span class="tag">Python</span><span class="tag">Process Automation</span>
           </div>
         </div>
+        <span class="proj-card-cta">View Details →</span>
       </div>
 
-      <div class="project-card fade-up" data-category="mechanical">
+      <div class="project-card fade-up" data-category="mechanical" data-modal="modalSparky">
         <div class="project-header">
           <div class="project-icon"><i class="fas fa-dog"></i></div>
           <span class="project-cat">Mechanical · Personal</span>
@@ -336,9 +299,10 @@
             <span class="tag">Mechanical Restoration</span>
           </div>
         </div>
+        <span class="proj-card-cta">View Details →</span>
       </div>
 
-      <div class="project-card fade-up delay-1" data-category="aerospace">
+      <div class="project-card fade-up delay-1" data-category="aerospace" data-modal="modalASAE">
         <div class="project-header">
           <div class="project-icon teal"><i class="fas fa-plane"></i></div>
           <span class="project-cat">Aerospace · Academic</span>
@@ -351,6 +315,7 @@
             <span class="tag">Composite Materials</span><span class="tag">Team Lead</span>
           </div>
         </div>
+        <span class="proj-card-cta">View Details →</span>
       </div>
 
     </div>
@@ -603,6 +568,202 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     });
   });
 });
+
+/* ---- Project modals (event delegation — modals live after this script) ---- */
+document.querySelectorAll('.project-card[data-modal]').forEach(card => {
+  card.addEventListener('click', () => {
+    const overlay = document.getElementById(card.dataset.modal);
+    if (overlay) overlay.classList.add('open');
+  });
+});
+document.addEventListener('click', e => {
+  const closeBtn = e.target.closest('.proj-modal-close');
+  if (closeBtn) {
+    closeBtn.closest('.proj-modal-overlay').classList.remove('open');
+    return;
+  }
+  if (e.target.classList.contains('proj-modal-overlay')) {
+    e.target.classList.remove('open');
+  }
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.querySelectorAll('.proj-modal-overlay.open').forEach(o => o.classList.remove('open'));
+});
 </script>
+
+<!-- ===== PROJECT MODALS ===== -->
+
+<div id="modalSpoiler" class="proj-modal-overlay">
+  <div class="proj-modal">
+    <button class="proj-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="proj-modal-sub">Mechanical · Personal · In Progress</div>
+    <h2>Tesla Model 3 Duckbill Spoiler</h2>
+    <div class="proj-modal-divider"></div>
+    <div class="proj-modal-body">
+      <p>A fully parametric duckbill spoiler designed to fit the compound-curved trunk lid of a Tesla Model 3. The goal is a clean, factory-flush fit with an aggressive functional profile — designed from scratch, not purchased off the shelf.</p>
+      <h4>Design Approach</h4>
+      <ul>
+        <li>Python script samples the trunk surface geometry and generates a parametric sketch in Fusion 360, ensuring the base flange matches the compound curvature exactly.</li>
+        <li>Multiple iterations printed in PLA/ASA to validate fit before committing to composite tooling.</li>
+        <li>Final mold machined from printed master + filler/primer surface prep for a clean carbon fiber layup.</li>
+      </ul>
+      <h4>Manufacturing Plan</h4>
+      <ul>
+        <li>Dry carbon fiber layup (2×2 twill, 3K) with vacuum bag consolidation.</li>
+        <li>Hardware: M6 T-nuts bonded into foam core; bolt-on fit to existing trunk lid holes.</li>
+      </ul>
+    </div>
+    <div class="proj-modal-tags">
+      <span class="tag blue">Fusion 360</span><span class="tag blue">Python</span>
+      <span class="tag">Carbon Fiber Layup</span><span class="tag">DFM</span>
+      <span class="tag">Vacuum Bagging</span><span class="tag amber">In Progress</span>
+    </div>
+  </div>
+</div>
+
+<div id="modalHydro" class="proj-modal-overlay">
+  <div class="proj-modal">
+    <button class="proj-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="proj-modal-sub">Mechanical · Personal · In Progress</div>
+    <h2>3D-Printed Hydroponics Tower</h2>
+    <div class="proj-modal-divider"></div>
+    <div class="proj-modal-body">
+      <p>An 18-site recirculating aeroponic grow tower built entirely from 3D-printed components. A submersible pump circulates nutrient solution from a reservoir to a top spray manifold, which mists root zones as the solution cascades down the tower.</p>
+      <h4>Design Goals</h4>
+      <ul>
+        <li>Watertight geometry achieved through perimeter-only slicer settings and tight tolerances at interlocking joints.</li>
+        <li>Food-safe PETG throughout — no PLA near the nutrient solution.</li>
+        <li>Snap-fit pod design for single-hand plant swaps without tools.</li>
+        <li>Modular tower segments — add or remove height in one print.</li>
+      </ul>
+      <h4>System Details</h4>
+      <ul>
+        <li>18 net-pot sites, 2-inch pots, suitable for lettuce, herbs, and small fruiting plants.</li>
+        <li>500 GPH submersible pump, 15-min on / 45-min off cycle timer.</li>
+        <li>Reservoir: 5-gallon HDPE bucket with printed lid and fill port.</li>
+      </ul>
+    </div>
+    <div class="proj-modal-tags">
+      <span class="tag blue">SolidWorks</span><span class="tag blue">3D Printing (PETG)</span>
+      <span class="tag">Fluid Systems</span><span class="tag">DFM</span><span class="tag amber">In Progress</span>
+    </div>
+  </div>
+</div>
+
+<div id="modalFEA" class="proj-modal-overlay">
+  <div class="proj-modal">
+    <button class="proj-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="proj-modal-sub">Engineering · Professional · EDLON GMM Pfaudler</div>
+    <h2>Parameterized FEA Cage Toolkit</h2>
+    <div class="proj-modal-divider"></div>
+    <div class="proj-modal-body">
+      <p>Vacuum-jacketed vessels require external support cages to resist atmospheric pressure loading. The original cage designs were sized conservatively by hand — heavy, slow to iterate, and inconsistently documented. I built a Python-scripted SolidWorks Simulation toolkit to automate the entire optimization loop.</p>
+      <h4>How It Works</h4>
+      <ul>
+        <li>Python drives SolidWorks via its API: parameterizes geometry (wall thickness, rib spacing, hole diameter), runs static FEA, extracts max deflection and min FOS, then logs results to a spreadsheet.</li>
+        <li>Automated sweep across a configurable design space — hundreds of simulation runs that would have taken weeks by hand.</li>
+        <li>Output: Pareto front of mass vs. deflection, with recommended design highlighted.</li>
+      </ul>
+      <h4>Results</h4>
+      <ul>
+        <li><strong>45% mass reduction</strong> on production cage design while meeting all deflection and safety factor targets.</li>
+        <li>Released through formal ECO process at EDLON; now used as the standard cage sizing tool.</li>
+        <li>Reusable for billet layouts and other vessel support geometries with minimal reconfiguration.</li>
+      </ul>
+    </div>
+    <div class="proj-modal-tags">
+      <span class="tag blue">Python</span><span class="tag blue">SolidWorks Simulation</span>
+      <span class="tag">FEA</span><span class="tag">ECO / Change Control</span><span class="tag">Structural Analysis</span>
+    </div>
+  </div>
+</div>
+
+<div id="modalSP" class="proj-modal-overlay">
+  <div class="proj-modal">
+    <button class="proj-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="proj-modal-sub">Software · Professional · EDLON GMM Pfaudler</div>
+    <h2>SharePoint Production Tracker</h2>
+    <div class="proj-modal-divider"></div>
+    <div class="proj-modal-body">
+      <p>Production tracking at EDLON lived in a tangle of paper travelers, email threads, and disconnected spreadsheets. Status calls were 20 minutes of "let me check" — no single source of truth. I built an end-to-end digital tracker on SharePoint + PowerApps in about three weeks.</p>
+      <h4>What Was Built</h4>
+      <ul>
+        <li>SharePoint list schema designed around the job lifecycle: quote → design → fab → test → ship.</li>
+        <li>PowerApps front-end for shop floor entry — tablet-friendly, no SharePoint training required.</li>
+        <li>Auto-revision stamps and required-field validation prevent incomplete records from being submitted.</li>
+        <li>Daily summary export (Python + Power Automate) delivered to the engineering team each morning.</li>
+      </ul>
+      <h4>Impact</h4>
+      <ul>
+        <li>Eliminated all manual data entry and status-chasing; on-time job closures improved measurably.</li>
+        <li>Audit traceability: every status change timestamped and attributed to a user.</li>
+        <li>Adopted across the full production floor within two months of launch.</li>
+      </ul>
+    </div>
+    <div class="proj-modal-tags">
+      <span class="tag blue">SharePoint</span><span class="tag blue">PowerApps</span>
+      <span class="tag blue">Python</span><span class="tag">Power Automate</span><span class="tag">Process Automation</span>
+    </div>
+  </div>
+</div>
+
+<div id="modalSparky" class="proj-modal-overlay">
+  <div class="proj-modal">
+    <button class="proj-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="proj-modal-sub">Mechanical · Personal · Restoration Project</div>
+    <h2>Sparky the Firefighter</h2>
+    <div class="proj-modal-divider"></div>
+    <div class="proj-modal-body">
+      <img src="projects/Sparky/Screenshot 2023-11-18 at 9.38.05 PM.png" alt="Sparky the Firefighter" class="proj-modal-img" />
+      <p>Sparky is a vintage animatronic Dalmatian owned by the Indian River Fire Company — a beloved mascot that had been silent for years. I took on the full restoration as a personal project during my senior year at the University of Delaware.</p>
+      <h4>Mechanical Work</h4>
+      <ul>
+        <li>Disassembled the entire drive and actuator system; replaced worn gears, cables, and motor mounts.</li>
+        <li>3D-printed replacement structural brackets and linkage parts that were no longer available.</li>
+        <li>Rebuilt the differential drive system for reliable straight-line and turning motion.</li>
+      </ul>
+      <h4>Electronics Overhaul</h4>
+      <ul>
+        <li>Replaced the original 75 MHz transmission system with a modern 2.4 GHz system for range and reliability.</li>
+        <li>Diagnosed and replaced the central electronic controller — the original was damaged beyond repair.</li>
+        <li>Rewired the audio system and integrated a new speaker amp for the siren and voice lines.</li>
+      </ul>
+    </div>
+    <div class="proj-modal-tags">
+      <span class="tag blue">3D Printing</span><span class="tag blue">Electronics</span>
+      <span class="tag">Mechanical Restoration</span><span class="tag">RC Systems</span><span class="tag">Animatronics</span>
+    </div>
+  </div>
+</div>
+
+<div id="modalASAE" class="proj-modal-overlay">
+  <div class="proj-modal">
+    <button class="proj-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="proj-modal-sub">Aerospace · Academic · SAE Aero Design East</div>
+    <h2>ASAE Competition Aircraft</h2>
+    <div class="proj-modal-divider"></div>
+    <div class="proj-modal-body">
+      <p>SAE International Aero Design East — Advanced Class. The mission simulates wildfire combat: a Primary Aircraft (PA) drops a Powered Autonomous Delivery Aircraft (PADA), which deploys a Ground Transport Vehicle (GTV) to a target. I served as Wings Lead Engineer.</p>
+      <h4>My Role</h4>
+      <ul>
+        <li>Designed and analyzed the wing and tail assembly for the Primary Aircraft: lift requirements, control surface sizing, structural spar layout.</li>
+        <li>Led composite fabrication of the wing panels (fiberglass skin over foam core); coordinated layup schedule with a team of 6.</li>
+        <li>Integrated the PADA release mechanism into the fuselage — mechanical latch triggered by servo command at altitude.</li>
+      </ul>
+      <h4>Technical Details</h4>
+      <ul>
+        <li>PA carries a 4 lb water payload + PADA; total gross weight ~14 lbs.</li>
+        <li>Wing: high-lift airfoil, 72-inch span, tapered planform.</li>
+        <li>PADA: autonomous navigation to GPS and color targets using Pixhawk flight controller.</li>
+        <li>GTV: manually controlled RC vehicle assembled post-drop, carries 2 lb water payload.</li>
+      </ul>
+    </div>
+    <div class="proj-modal-tags">
+      <span class="tag blue">SolidWorks</span><span class="tag blue">Composite Fabrication</span>
+      <span class="tag">Aerodynamics</span><span class="tag">Pixhawk / Autonomous Systems</span><span class="tag">Team Lead</span>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
