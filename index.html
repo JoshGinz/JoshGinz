@@ -21,6 +21,8 @@
 </head>
 <body>
 
+<div id="scroll-progress"></div>
+
 <nav id="navbar">
   <div class="container nav-inner">
     <a href="#hero" class="nav-logo">Josh<span>Ginz</span></a>
@@ -40,14 +42,65 @@
 
 <section id="hero">
   <div class="container">
-    <div class="hero-content">
-      <div class="hero-tag"><span class="dot"></span>Available for Collaboration</div>
-      <h1 class="hero-name">Joshua<br><span>Ginsberg</span></h1>
-      <div class="hero-role"><span id="typewriter"></span><span class="cursor"></span></div>
-      <p class="hero-bio">Hands-on mechanical/manufacturing engineer with a robust background in 3D printing, Python, and advanced production methods. Committed to shipping solutions with clear, measurable impact.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary"><i class="fas fa-layer-group"></i> View Projects</a>
-        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+    <div class="hero-row">
+      <div class="hero-content">
+        <div class="hero-tag"><span class="dot"></span>Available for Collaboration</div>
+        <h1 class="hero-name">Joshua<br><span>Ginsberg</span></h1>
+        <div class="hero-role"><span id="typewriter"></span><span class="cursor"></span></div>
+        <p class="hero-bio">Hands-on mechanical/manufacturing engineer with a robust background in 3D printing, Python, and advanced production methods. Committed to shipping solutions with clear, measurable impact.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-layer-group"></i> View Projects</a>
+          <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+        </div>
+      </div>
+      <!-- Engineering diagram visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-geo">
+          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Outer reference ring -->
+            <circle cx="200" cy="200" r="172" stroke="rgba(14,165,233,0.14)" stroke-width="1"/>
+            <!-- Dashed orbit ring -->
+            <circle cx="200" cy="200" r="136" stroke="rgba(14,165,233,0.22)" stroke-width="1" stroke-dasharray="7 11"/>
+            <!-- Inner solid ring -->
+            <circle cx="200" cy="200" r="96" stroke="rgba(14,165,233,0.20)" stroke-width="1.5"/>
+            <!-- Tiny center ring -->
+            <circle cx="200" cy="200" r="10" stroke="rgba(14,165,233,0.50)" stroke-width="1.5" fill="none"/>
+            <!-- Center dot -->
+            <circle cx="200" cy="200" r="3.5" fill="rgba(14,165,233,0.75)"/>
+            <!-- Crosshair lines -->
+            <line x1="0" y1="200" x2="380" y2="200" stroke="rgba(14,165,233,0.07)" stroke-width="1"/>
+            <line x1="200" y1="0" x2="200" y2="380" stroke="rgba(14,165,233,0.07)" stroke-width="1"/>
+            <!-- Cardinal tick marks (outer) -->
+            <line x1="28" y1="200" x2="28" y2="188" stroke="rgba(14,165,233,0.30)" stroke-width="1.5"/>
+            <line x1="372" y1="200" x2="372" y2="188" stroke="rgba(14,165,233,0.30)" stroke-width="1.5"/>
+            <line x1="200" y1="28" x2="212" y2="28" stroke="rgba(14,165,233,0.30)" stroke-width="1.5"/>
+            <line x1="200" y1="372" x2="212" y2="372" stroke="rgba(14,165,233,0.30)" stroke-width="1.5"/>
+            <!-- 45° tick marks -->
+            <line x1="79" y1="79" x2="88" y2="88" stroke="rgba(14,165,233,0.16)" stroke-width="1"/>
+            <line x1="321" y1="79" x2="312" y2="88" stroke="rgba(14,165,233,0.16)" stroke-width="1"/>
+            <line x1="79" y1="321" x2="88" y2="312" stroke="rgba(14,165,233,0.16)" stroke-width="1"/>
+            <line x1="321" y1="321" x2="312" y2="312" stroke="rgba(14,165,233,0.16)" stroke-width="1"/>
+            <!-- Corner reference squares (inner) -->
+            <rect x="150" y="150" width="9" height="9" stroke="rgba(14,165,233,0.28)" stroke-width="1" fill="none"/>
+            <rect x="241" y="150" width="9" height="9" stroke="rgba(14,165,233,0.28)" stroke-width="1" fill="none"/>
+            <rect x="150" y="241" width="9" height="9" stroke="rgba(14,165,233,0.28)" stroke-width="1" fill="none"/>
+            <rect x="241" y="241" width="9" height="9" stroke="rgba(14,165,233,0.28)" stroke-width="1" fill="none"/>
+            <!-- Dimension annotation line -->
+            <line x1="64" y1="248" x2="336" y2="248" stroke="rgba(14,165,233,0.10)" stroke-width="1" stroke-dasharray="3 7"/>
+            <!-- Dimension arrowheads -->
+            <polyline points="72,244 64,248 72,252" stroke="rgba(14,165,233,0.22)" stroke-width="1" fill="none"/>
+            <polyline points="328,244 336,248 328,252" stroke="rgba(14,165,233,0.22)" stroke-width="1" fill="none"/>
+            <!-- Annotation labels -->
+            <text x="200" y="170" font-family="JetBrains Mono,monospace" font-size="9.5" fill="rgba(14,165,233,0.38)" text-anchor="middle" letter-spacing="1">∅ 192 mm</text>
+            <text x="200" y="290" font-family="JetBrains Mono,monospace" font-size="9.5" fill="rgba(14,165,233,0.38)" text-anchor="middle" letter-spacing="1">R 96</text>
+            <!-- Tolerance note -->
+            <text x="200" y="358" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(14,165,233,0.28)" text-anchor="middle" letter-spacing="0.5">TOL ±0.005</text>
+            <!-- Angular dimension arc -->
+            <path d="M 200 104 A 96 96 0 0 1 296 200" stroke="rgba(245,158,11,0.22)" stroke-width="1" stroke-dasharray="5 8" fill="none"/>
+            <!-- Amber accent dot at 45° on inner ring -->
+            <circle cx="268" cy="132" r="4" fill="rgba(245,158,11,0.55)"/>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -449,48 +502,97 @@
 </footer>
 
 <script>
+/* ---- Navbar scroll + active link ---- */
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 40); highlightNav(); });
+const scrollProgress = document.getElementById('scroll-progress');
+
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+  highlightNav();
+  // Scroll progress bar
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  if (total > 0) scrollProgress.style.width = (window.scrollY / total * 100) + '%';
+});
+
+/* ---- Mobile nav ---- */
 const navToggle = document.getElementById('navToggle');
-const navClose = document.getElementById('navClose');
-const navLinks = document.getElementById('navLinks');
+const navClose   = document.getElementById('navClose');
+const navLinks   = document.getElementById('navLinks');
 navToggle.addEventListener('click', () => navLinks.classList.add('open'));
-navClose.addEventListener('click', () => navLinks.classList.remove('open'));
+navClose.addEventListener('click',  () => navLinks.classList.remove('open'));
 navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
 function highlightNav() {
   const sections = ['about','experience','projects','skills','contact'];
   let current = '';
-  sections.forEach(id => { const el = document.getElementById(id); if (el && window.scrollY >= el.offsetTop - 120) current = id; });
-  document.querySelectorAll('.nav-links a').forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 120) current = id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
 }
-const roles = ['Project Engineer · Mechanical & Mfg','SolidWorks & FEA Specialist','3D Printing & Additive Mfg','Python Automation Builder','Supplier Quality Engineer'];
+
+/* ---- Typewriter ---- */
+const roles = [
+  'Project Engineer · Mechanical & Mfg',
+  'SolidWorks & FEA Specialist',
+  '3D Printing & Additive Mfg',
+  'Python Automation Builder',
+  'Supplier Quality Engineer',
+];
 let ri = 0, ci = 0, deleting = false;
 const tw = document.getElementById('typewriter');
 function typeLoop() {
   const word = roles[ri];
-  if (!deleting) { tw.textContent = word.slice(0, ++ci); if (ci === word.length) { deleting = true; setTimeout(typeLoop, 2200); return; } }
-  else { tw.textContent = word.slice(0, --ci); if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; } }
-  setTimeout(typeLoop, deleting ? 38 : 72);
+  if (!deleting) {
+    tw.textContent = word.slice(0, ++ci);
+    if (ci === word.length) { deleting = true; setTimeout(typeLoop, 2200); return; }
+  } else {
+    tw.textContent = word.slice(0, --ci);
+    if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+  }
+  setTimeout(typeLoop, deleting ? 36 : 68);
 }
 typeLoop();
-const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.12 });
+
+/* ---- Scroll reveal ---- */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.10 });
 document.querySelectorAll('.fade-up, .fade-left, .fade-right').forEach(el => observer.observe(el));
+
+/* ---- Animated counters ---- */
 function animateCounters() {
   document.querySelectorAll('.stat-number[data-target]').forEach(el => {
-    const target = +el.dataset.target, prefix = el.dataset.prefix || '', suffix = el.dataset.suffix || '';
-    let start = 0; const step = target / 50;
-    const timer = setInterval(() => { start = Math.min(start + step, target); el.textContent = prefix + Math.round(start) + suffix; if (start >= target) clearInterval(timer); }, 28);
+    const target = +el.dataset.target;
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    let start = 0;
+    const step = target / 55;
+    const timer = setInterval(() => {
+      start = Math.min(start + step, target);
+      el.textContent = prefix + Math.round(start) + suffix;
+      if (start >= target) clearInterval(timer);
+    }, 24);
   });
 }
 const statsEl = document.getElementById('stats');
-const statsObserver = new IntersectionObserver((entries) => { if (entries[0].isIntersecting) { animateCounters(); statsObserver.disconnect(); } }, { threshold: 0.4 });
+const statsObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) { animateCounters(); statsObserver.disconnect(); }
+}, { threshold: 0.35 });
 if (statsEl) statsObserver.observe(statsEl);
+
+/* ---- Project filter ---- */
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const filter = btn.dataset.filter;
-    document.querySelectorAll('.project-card').forEach(card => { card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter); });
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter);
+    });
   });
 });
 </script>
