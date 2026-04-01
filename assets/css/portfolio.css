@@ -7,16 +7,16 @@
 
 /* --- Variables --- */
 :root {
-  --bg: #f1f5f9;
-  --bg-alt: #e8edf3;
-  --bg-hero: #f0f7ff;
+  --bg: #f0f5ed;
+  --bg-alt: #e4ede0;
+  --bg-hero: #f2f9ee;
   --surface: #ffffff;
-  --surface-2: #f8fafc;
+  --surface-2: #f6faf4;
   --navy: #1e3a5f;
   --navy-light: #2d5282;
-  --blue: #0ea5e9;
-  --blue-light: #38bdf8;
-  --blue-dim: rgba(14,165,233,0.12);
+  --blue: #5c9e52;
+  --blue-light: #84c475;
+  --blue-dim: rgba(92,158,82,0.12);
   --amber: #f59e0b;
   --amber-light: #fcd34d;
   --text: #0f172a;
@@ -187,7 +187,7 @@ p { color: var(--text-mid); }
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(150deg, #f0f7ff 0%, #eaf3fb 50%, #f5f9ff 100%);
+  background: linear-gradient(150deg, #f2f9ee 0%, #e8f5e2 50%, #f0f7ec 100%);
   overflow: hidden;
 }
 /* Blueprint grid */
@@ -196,8 +196,8 @@ p { color: var(--text-mid); }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(14,165,233,0.065) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(14,165,233,0.065) 1px, transparent 1px);
+    linear-gradient(rgba(92,158,82,0.065) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(92,158,82,0.065) 1px, transparent 1px);
   background-size: 44px 44px;
   z-index: 0;
 }
@@ -207,7 +207,7 @@ p { color: var(--text-mid); }
   position: absolute;
   bottom: -15%; right: -8%;
   width: 65%; height: 85%;
-  background: radial-gradient(ellipse, rgba(14,165,233,0.07) 0%, transparent 65%);
+  background: radial-gradient(ellipse, rgba(92,158,82,0.07) 0%, transparent 65%);
   z-index: 0;
   animation: glowShift 10s ease-in-out infinite alternate;
 }
@@ -249,8 +249,8 @@ p { color: var(--text-mid); }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(14,165,233,0.10);
-  border: 1px solid rgba(14,165,233,0.25);
+  background: rgba(92,158,82,0.10);
+  border: 1px solid rgba(92,158,82,0.25);
   color: var(--blue);
   font-family: var(--font-mono);
   font-size: 0.78rem;
@@ -324,9 +324,9 @@ p { color: var(--text-mid); }
 }
 .btn-primary { background: var(--blue); color: #fff; border-color: var(--blue); }
 .btn-primary:hover {
-  background: #0284c7; border-color: #0284c7;
+  background: #4a8840; border-color: #4a8840;
   color: #fff; transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(14,165,233,0.28);
+  box-shadow: 0 8px 24px rgba(92,158,82,0.28);
 }
 /* Ghost: for light-background hero */
 .btn-ghost {
@@ -498,7 +498,7 @@ p { color: var(--text-mid); }
   box-shadow: var(--shadow-sm); transition: var(--transition);
   display: flex; flex-direction: column;
 }
-.project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: rgba(14,165,233,0.4); }
+.project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: rgba(92,158,82,0.4); }
 .project-card.hidden { display: none; }
 .project-header {
   padding: 1.4rem 1.5rem 0;
@@ -528,7 +528,7 @@ p { color: var(--text-mid); }
   background: var(--bg-alt); color: var(--navy);
   padding: 0.2rem 0.55rem; border-radius: 4px; font-weight: 500;
 }
-.tag.blue { background: #eff6ff; color: #1d4ed8; }
+.tag.blue { background: #ecf7e9; color: #286a1e; }
 .tag.amber { background: #fffbeb; color: #92400e; }
 
 /* --- Skills --- */
@@ -599,7 +599,7 @@ p { color: var(--text-mid); }
 }
 .form-group input:focus, .form-group textarea:focus {
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(14,165,233,0.10);
+  box-shadow: 0 0 0 3px rgba(92,158,82,0.10);
   background: var(--surface);
 }
 .form-group textarea { min-height: 120px; resize: vertical; }
@@ -679,8 +679,8 @@ footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 2.5rem 
 .mb-2 { margin-bottom: 1rem; }
 .clearance-badge {
   display: inline-flex; align-items: center; gap: 6px;
-  background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(245,158,11,0.16));
-  border: 1px solid rgba(245,158,11,0.35); color: #92400e;
+  background: linear-gradient(135deg, rgba(92,158,82,0.08), rgba(92,158,82,0.16));
+  border: 1px solid rgba(92,158,82,0.35); color: #286a1e;
   font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600;
   padding: 0.3rem 0.75rem; border-radius: 4px;
   letter-spacing: 0.06em; text-transform: uppercase;
