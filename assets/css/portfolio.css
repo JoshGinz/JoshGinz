@@ -487,7 +487,7 @@ p { color: var(--text-mid); }
 
 /* --- About --- */
 .about-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: center; }
-.about-photo-wrap { position: relative; }
+.about-photo-wrap { position: relative; width: fit-content; margin: 0 auto; }
 .about-photo {
   width: 100%; max-width: 340px;
   border-radius: var(--radius-lg);
@@ -528,7 +528,7 @@ p { color: var(--text-mid); }
 .timeline { position: relative; padding-left: 2.5rem; }
 .timeline::before {
   content: '';
-  position: absolute; left: 0; top: 8px; bottom: 8px;
+  position: absolute; left: 6px; top: 8px; bottom: 8px;
   width: 2px;
   background: linear-gradient(to bottom, var(--blue), var(--border-light));
 }
