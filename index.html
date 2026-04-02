@@ -1226,18 +1226,25 @@ document.addEventListener('keydown', function(e) {
   const pressed = map[e.key];
   if (!pressed) return;
   e.preventDefault();
-  if (!running) {
-    /* start fresh, then apply the key that launched the game */
-    running = true;
-    document.getElementById('snakeMsg').textContent = '';
-    startSnake();               /* resets dir & next to {x:1,y:0} */
-    next = {...pressed};        /* override next AFTER reset */
-    dir  = {x:0, y:0};         /* neutral so 180° check passes on tick 1 */
-    loop = setInterval(gameTick, TICK);
-  } else {
-    /* already running — buffer the new direction if it isn't a 180° flip */
+  if (running) {
+    /* game in progress — change direction, reject 180° flips */
     if (pressed.x !== -dir.x || pressed.y !== -dir.y) next = pressed;
+    return;
   }
+  /* not running: start/restart the game from scratch */
+  clearInterval(loop);
+  const mid = Math.floor(GRID / 2);
+  snake = [{x:mid,y:mid},{x:mid-1,y:mid},{x:mid-2,y:mid}];
+  dir   = {x:1, y:0};   /* snake faces right; used for 180° check below */
+  /* apply pressed direction unless it would immediately reverse into the body */
+  next  = (pressed.x !== -dir.x || pressed.y !== -dir.y) ? pressed : dir;
+  score = 0;
+  placeFood();
+  updateScore();
+  draw();
+  document.getElementById('snakeMsg').textContent = '';
+  running = true;
+  loop = setInterval(gameTick, TICK);
 });
 
 /* mobile swipe */
