@@ -1223,15 +1223,20 @@ document.addEventListener('keydown', function(e) {
     ArrowLeft:{x:-1,y:0}, ArrowRight:{x:1,y:0},
     w:{x:0,y:-1}, s:{x:0,y:1}, a:{x:-1,y:0}, d:{x:1,y:0}
   };
-  const d = map[e.key];
-  if (!d) return;
+  const pressed = map[e.key];
+  if (!pressed) return;
   e.preventDefault();
-  if (d.x !== -dir.x || d.y !== -dir.y) next = d;
   if (!running) {
+    /* start fresh, then apply the key that launched the game */
     running = true;
     document.getElementById('snakeMsg').textContent = '';
-    startSnake();
+    startSnake();               /* resets dir & next to {x:1,y:0} */
+    next = {...pressed};        /* override next AFTER reset */
+    dir  = {x:0, y:0};         /* neutral so 180° check passes on tick 1 */
     loop = setInterval(gameTick, TICK);
+  } else {
+    /* already running — buffer the new direction if it isn't a 180° flip */
+    if (pressed.x !== -dir.x || pressed.y !== -dir.y) next = pressed;
   }
 });
 
