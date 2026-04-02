@@ -758,6 +758,7 @@ footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 2.5rem 
 @media (max-width: 640px) {
   .section { padding: 3rem 0; }
   #hero { padding: 6rem 0 4rem; min-height: auto; }
+  .hero-scroll { bottom: 0.25rem; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .stat-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.08); }
