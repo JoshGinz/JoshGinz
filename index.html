@@ -1075,5 +1075,182 @@ document.addEventListener('keydown', e => {
   </div>
 </div>
 
+<!-- ===== EASTER EGG: SNAKE GAME ===== -->
+<div id="snakeOverlay" style="
+  display:none; position:fixed; inset:0; z-index:9999;
+  background:#080a12;
+  flex-direction:column; align-items:center; justify-content:center;
+">
+  <div style="display:flex;justify-content:space-between;align-items:center;width:min(90vw,500px);margin-bottom:0.75rem;">
+    <div>
+      <span style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.15em;color:var(--blue);text-transform:uppercase;">🐍 secret mode</span><br>
+      <span style="font-size:1.1rem;font-weight:700;color:#fff;letter-spacing:-0.01em;">Josh<span style="color:var(--blue);">Snake</span></span>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-soft);">Score&nbsp;<span id="snakeScore" style="color:#fff;font-weight:700;">0</span>&nbsp;&nbsp;Best&nbsp;<span id="snakeBest" style="color:var(--blue);font-weight:700;">0</span></div>
+      <div style="font-family:var(--font-mono);font-size:0.62rem;color:#3a4060;margin-top:2px;">ESC to exit · arrows or WASD</div>
+    </div>
+  </div>
+  <canvas id="snakeCanvas" style="
+    border:1px solid #1a2240; border-radius:12px;
+    background:#0b0f1c; display:block;
+    width:min(90vw,500px); height:min(90vw,500px);
+  "></canvas>
+  <div id="snakeMsg" style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-soft);margin-top:0.75rem;min-height:1.1em;letter-spacing:0.04em;"></div>
+</div>
+
+<script>
+/* ---- Easter egg trigger: click nav logo 5× within 3s ---- */
+(function() {
+  const logo = document.querySelector('.nav-logo');
+  if (!logo) return;
+  let clicks = 0, timer = null;
+  logo.addEventListener('click', function(e) {
+    e.preventDefault();
+    clicks++;
+    clearTimeout(timer);
+    timer = setTimeout(() => { clicks = 0; }, 3000);
+    if (clicks >= 5) { clicks = 0; clearTimeout(timer); openSnake(); }
+  });
+})();
+
+/* ---- Snake ---- */
+const TICK = 120;
+let snake, dir, next, food, score, best = 0, loop, running, GRID, CELL;
+
+function sizeCanvas() {
+  const cv = document.getElementById('snakeCanvas');
+  const size = Math.min(window.innerWidth * 0.9, 500);
+  GRID = 20;
+  CELL = Math.floor(size / GRID);
+  cv.width  = GRID * CELL;
+  cv.height = GRID * CELL;
+}
+
+function openSnake() {
+  const ov = document.getElementById('snakeOverlay');
+  ov.style.display = 'flex';
+  sizeCanvas();
+  startSnake();
+}
+
+function closeSnake() {
+  document.getElementById('snakeOverlay').style.display = 'none';
+  clearInterval(loop);
+  running = false;
+}
+
+function startSnake() {
+  clearInterval(loop); running = false;
+  const mid = Math.floor(GRID / 2);
+  snake = [{x:mid,y:mid},{x:mid-1,y:mid},{x:mid-2,y:mid}];
+  dir  = {x:1,y:0};
+  next = {x:1,y:0};
+  score = 0;
+  placeFood(); updateScore(); draw();
+  document.getElementById('snakeMsg').textContent = 'Press any arrow key to start';
+}
+
+function placeFood() {
+  let p;
+  do { p = {x:Math.floor(Math.random()*GRID), y:Math.floor(Math.random()*GRID)}; }
+  while (snake.some(s => s.x===p.x && s.y===p.y));
+  food = p;
+}
+
+function updateScore() {
+  document.getElementById('snakeScore').textContent = score;
+  document.getElementById('snakeBest').textContent  = best;
+}
+
+function gameTick() {
+  dir = {...next};
+  const head = {x: snake[0].x+dir.x, y: snake[0].y+dir.y};
+  if (head.x<0||head.x>=GRID||head.y<0||head.y>=GRID||snake.slice(1).some(s=>s.x===head.x&&s.y===head.y)) {
+    clearInterval(loop); running = false;
+    if (score > best) best = score;
+    updateScore();
+    document.getElementById('snakeMsg').textContent = '💀 Game over — arrow key to play again';
+    return;
+  }
+  snake.unshift(head);
+  if (head.x===food.x && head.y===food.y) { score++; updateScore(); placeFood(); }
+  else snake.pop();
+  draw();
+}
+
+function draw() {
+  const cv  = document.getElementById('snakeCanvas');
+  const ctx = cv.getContext('2d');
+
+  /* background */
+  ctx.fillStyle = '#0b0f1c';
+  ctx.fillRect(0, 0, cv.width, cv.height);
+
+  /* subtle grid */
+  ctx.strokeStyle = '#111827';
+  ctx.lineWidth = 0.5;
+  for (let i=0;i<=GRID;i++) {
+    ctx.beginPath(); ctx.moveTo(i*CELL,0); ctx.lineTo(i*CELL,cv.height); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0,i*CELL); ctx.lineTo(cv.width,i*CELL); ctx.stroke();
+  }
+
+  /* food — glowing blue dot */
+  const fx = food.x*CELL+CELL/2, fy = food.y*CELL+CELL/2;
+  const grd = ctx.createRadialGradient(fx,fy,1,fx,fy,CELL/2);
+  grd.addColorStop(0,'#93c5fd'); grd.addColorStop(1,'#1d4ed8');
+  ctx.fillStyle = grd;
+  ctx.beginPath(); ctx.arc(fx,fy,CELL/2-2,0,Math.PI*2); ctx.fill();
+
+  /* snake */
+  snake.forEach((s,i) => {
+    const lightness = Math.max(30, 55 - i * 1.2);
+    ctx.fillStyle = i===0 ? '#60a5fa' : `hsl(220,65%,${lightness}%)`;
+    const pad = 2, r = i===0 ? 5 : 3;
+    const x = s.x*CELL+pad, y = s.y*CELL+pad, w = CELL-pad*2, h = CELL-pad*2;
+    ctx.beginPath();
+    ctx.roundRect(x, y, w, h, r);
+    ctx.fill();
+  });
+}
+
+/* keyboard */
+document.addEventListener('keydown', function(e) {
+  if (document.getElementById('snakeOverlay').style.display === 'none') return;
+  if (e.key === 'Escape') { closeSnake(); return; }
+  const map = {
+    ArrowUp:{x:0,y:-1}, ArrowDown:{x:0,y:1},
+    ArrowLeft:{x:-1,y:0}, ArrowRight:{x:1,y:0},
+    w:{x:0,y:-1}, s:{x:0,y:1}, a:{x:-1,y:0}, d:{x:1,y:0}
+  };
+  const d = map[e.key];
+  if (!d) return;
+  e.preventDefault();
+  if (d.x !== -dir.x || d.y !== -dir.y) next = d;
+  if (!running) {
+    running = true;
+    document.getElementById('snakeMsg').textContent = '';
+    startSnake();
+    loop = setInterval(gameTick, TICK);
+  }
+});
+
+/* mobile swipe */
+(function(){
+  let sx, sy;
+  const cv = document.getElementById('snakeCanvas');
+  cv.addEventListener('touchstart', e=>{ sx=e.touches[0].clientX; sy=e.touches[0].clientY; },{passive:true});
+  cv.addEventListener('touchend', e=>{
+    const dx=e.changedTouches[0].clientX-sx, dy=e.changedTouches[0].clientY-sy;
+    if (Math.abs(dx)<10&&Math.abs(dy)<10) return;
+    const d = Math.abs(dx)>Math.abs(dy) ? (dx>0?{x:1,y:0}:{x:-1,y:0}) : (dy>0?{x:0,y:1}:{x:0,y:-1});
+    if (d.x !== -dir.x || d.y !== -dir.y) next = d;
+    if (!running) { running=true; document.getElementById('snakeMsg').textContent=''; startSnake(); loop=setInterval(gameTick,TICK); }
+  },{passive:true});
+})();
+
+window.closeSnake = closeSnake;
+</script>
+
 </body>
 </html>
